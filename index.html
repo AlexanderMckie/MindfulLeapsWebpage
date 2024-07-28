@@ -1,16 +1,165 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexander Sazar</title>
+    <title>Mindful Leaps</title>
 
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 
+    
+   
+
 </head>
 <body>
+    <div class="ham-menu" >
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <header class="MainHeader" id="MainHeader">
+<img src="assets/images/sky.jpg" alt="skyImage" class="skyImage">
+<img src="assets/images/Header.svg" alt="HeaderImage" class="HeaderImage">
+    </header>
+    <nav class="off-screen-menu" id="off-screen-menu">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+  
+    <main>
+        <section id="about" >
+            <h2>About</h2>
+            <div class="about-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minima perspiciatis, illo esse similique itaque libero quis quas laborum quisquam! Eos mollitia, praesentium quibusdam cum delectus earum unde nemo aliquid!
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minima perspiciatis, illo esse similique itaque libero quis quas laborum quisquam! Eos mollitia, praesentium quibusdam cum delectus earum unde nemo aliquid
+                </p>
+            <div class="about-image-container">
+                <div class="parallax">
+                    <img src="assets/images/about.jpg" alt="AboutImage" class="AboutImage">
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="services">
+            <h2>Services</h2>
+            <div class="services-content-one">
+                <p class="service-one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minima perspiciatis, illo esse similique itaque libero quis quas laborum quisquam! Eos mollitia, praesentium quibusdam cum delectus earum unde nemo aliquid!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minima perspiciatis, illo esse similique itaque libero quis quas laborum quisquam! Eos mollitia, praesentium quibusdam cum delectus earum unde nemo aliquid
+                </p>
+                <div class="servicesOne-image-container">
+                    <div class="parallax">
+                        <img src="assets/images/about.jpg" alt="AboutImage" class="AboutImage">
+                    </div>
+                </div>
+            </div>
+            <div class="services-content-two">
+                <div class="servicesTwo-image-container">
+                    <div class="parallax">
+                        <img src="assets/images/about.jpg" alt="AboutImage" class="AboutImage">
+                    </div>
+                </div>
+                <p class="service-two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minima perspiciatis, illo esse similique itaque libero quis quas laborum quisquam! Eos mollitia, praesentium quibusdam cum delectus earum unde nemo aliquid!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minima perspiciatis, illo esse similique itaque libero quis quas laborum quisquam! Eos mollitia, praesentium quibusdam cum delectus earum unde nemo aliquid
+                    </p>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="child-first-name">Child's Name *</label>
+                    <input type="text" id="child-first-name" name="child-first-name" placeholder="First" required>
+                    <input type="text" id="child-last-name" name="child-last-name" placeholder="Last" required>
+                </div>
+                <div>
+                    <label for="child-dob">Child's Date of Birth *</label>
+                    <input type="date" id="child-dob" name="child-dob" required>
+                </div>
+                <div>
+                    <label for="referral-first-name">Name of person making referral: *</label>
+                    <input type="text" id="referral-first-name" name="referral-first-name" placeholder="First" required>
+                    <input type="text" id="referral-last-name" name="referral-last-name" placeholder="Last" required>
+                </div>
+                <div>
+                    <label for="relationship">Relationship to Child *</label>
+                    <input type="text" id="relationship" name="relationship" required>
+                </div>
+                <div>
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div>
+                    <label for="address">Address *</label>
+                    <textarea id="address" name="address" required></textarea>   
+                </div>
+                <div>
+                    <label for="diagnosis">Diagnosis</label>
+                    <input type="text" id="diagnosis" name="diagnosis">
+                </div>
+                <div>
+                    <label for="concerns">Concerns *</label>
+                    <textarea id="concerns" name="concerns" required></textarea>
+                    <small>Please provide as much detail as possible</small>
+                </div>
+                <div>
+                    <label for="funding">Funding: *</label>
+                    <div id="funding">
+                        <input type="checkbox" id="medicare-plan" name="funding" value="medicare-plan" required>
+                        <label for="medicare-plan">Medicare Plan</label>
+                        <input type="checkbox" id="private-plan" name="funding" value="private-plan" required>
+                        <label for="private-plan">Private</label>
+                    </div>
+                <div>
+                    <label for="additional-info">Additional information</label>
+                    <textarea id="additional-info" name="additional-info"></textarea>
+                </div>
+                <div>
+                    <label for="hear-about-us">How did you hear about us? *</label>
+                    <input type="text" id="hear-about-us" name="hear-about-us" required>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mindful Leaps</p>
+    </footer>
+
+    
+
+        
 
 </body>
 <script src="assets/js/main.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to('.parallax', {
+        yPercent: -50,
+        ease: 'none',
+        scrollTrigger: {
+            trigger: '.about-image-container',
+            start: 'top bottom', // When the top of the container hits the bottom of the viewport
+            end: 'bottom top', // When the bottom of the container hits the top of the viewport
+            scrub: true // Smooth scrubbing
+        }
+    });
+});
+</script>
 </html>

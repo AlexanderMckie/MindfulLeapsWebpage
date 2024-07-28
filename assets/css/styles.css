@@ -1,3 +1,347 @@
-body{
-    background: black;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@502&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
+
+body{
+    background: rgb(113, 182, 223);
+}
+.skyImage {
+    width: 100%;
+    z-index: -10; /* Lower z-index to ensure it is below the header image */
+    position: absolute; /* Use absolute positioning */
+    top: 0; /* Adjust as needed */
+    left: 0; /* Adjust as needed */
+}
+
+.headerImage {
+    width: 60%;
+    z-index: 10; /* Higher z-index to ensure it is above the sky image */
+    position: absolute; /* Use absolute positioning */
+    top: 0; /* Adjust as needed */
+    left: 0; /* Adjust as needed */
+}
+
+
+
+/*  Nav Bar and its compnments*/
+.navbar {
+    position: relative;
+    z-index: 10; /* Ensure navbar is above the pseudo-element */
+}
+
+.navbar:before {
+    content: '';
+    position: absolute;
+    top: -10px; /* Adjust these values to control the gradient size */
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    z-index: -1; /* Position the gradient behind the navbar content */
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+    pointer-events: none; /* Allows clicks to pass through to elements below */
+}
+
+a {
+    color: white;
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    color: #6F86FF;
+}
+
+/* off-screen-menu */
+.off-screen-menu {
+background-color:  rgba(27, 42, 102, 0.349);
+height: 70vh;
+width: 100%;
+max-width: 450px;
+position: fixed;
+top: 0;
+right: -450px;
+display: flex;
+flex-direction: column;
+align-items: center;    
+justify-content: center;
+text-align: center;
+font-size: 3rem;
+transition: .3s ease;
+backdrop-filter: blur(5px);
+border-bottom-left-radius: 50px;
+box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+z-index: 99;
+}
+.off-screen-menu.active {
+right: 0;
+}
+/* nav */
+nav {
+    padding: 1rem;
+    display: flex;
+    background-color: rgb(34, 37, 49);
+}
+/* ham menu */
+.ham-menu {
+    height: 100px;
+    width: 80px;
+    display: flex;
+    margin-left: auto;
+    position: sticky; /* Changed from relative to sticky */
+    right: 5%;
+    top: 5%;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+.ham-menu span {
+    height: 15px;
+    width: 100%;
+    background-color: #120742;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+.ham-menu.active span {
+    background-color: white;
+    box-shadow: none ;
+}
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+/* the main sections and thier components  */
+
+section {
+    background-color: #1709587a;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 200px;
+    backdrop-filter: blur(5px);
+    z-index: -20;
+}
+h2{
+    color: #bcc541;
+    font-size: 50px;
+    font-family: 'Sora', sans-serif; 
+    text-align: center;
+    padding: 10%;
+    text-shadow: 2px 6px 8px rgba(0, 0, 0, 0.5);
+}
+p {
+    color: #eec876;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif; 
+    
+}
+.about-content {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically by default (mobile-first) */
+    padding: 10%; /* Space between elements */
+    flex: 1; /* Take up remaining space */
+    gap: 5%;
+}
+.about-content p {
+    flex: 1; /* Take up remaining space */
+}
+.about-image-container {
+    position: relative;
+    overflow: hidden; /* Ensure the image doesn't overflow the container */
+    width: 100%; /* Set a fixed width for the container */
+    height: 600px; /* Set a fixed height for the container */
+    border-radius: 30px;
+}
+.AboutImage {
+    width: 150%; /* Increase the width to ensure the image covers the container */
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container without being cut off */
+    position: absolute;
+    left: -47%; /* Adjust the left property to move the image to the left */
+}
+.services-content {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically by default (mobile-first) */
+    padding: 10%; /* Space between elements */
+    flex: 1; /* Take up remaining space */
+    gap: 5%;
+}
+.servicesTwo-image-container,
+.servicesOne-image-container {
+    position: relative;
+    overflow: hidden; /* Ensure the image doesn't overflow the container */
+    width: 100%; /* Set a fixed width for the container */
+    height: 600px; /* Set a fixed height for the container */
+    border-radius: 30px;
+}
+.ServicesTwoImage,
+.ServicesOneImage {
+    width: 150%; /* Increase the width to ensure the image covers the container */
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container without being cut off */
+    position: absolute;
+    left: -25%; /* Adjust the left property to move the image to the left */
+}
+.parallax {
+    position: absolute;
+    width: 150%;
+    height: 150%; /* Make the parallax container the same height as the image container */
+    overflow: hidden;
+}
+
+.contact label {
+    color: #dad862;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif; 
+    padding: 10px;
+    align-content: center;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+.contact input {
+    align-content: center;
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    background-color: #1709587a;
+    color: white;
+    height: 30%;
+}
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    color: #b37575;
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query for desktops */
+@media (min-width: 1024px) {
+
+    
+
+    .about-content {
+        display: flex;
+            /* Stack elements vertically by default (mobile-first) */
+        gap: 20px; /* Space between elements */
+        flex-direction: row; /* Position elements side by side on larger screens */
+    }
+
+    .about-content p {
+        flex: 1; /* Take up remaining space */
+        flex-direction: row;
+    }
+    .about-image-container {
+        max-width: 50%; /* Optional: Set a maximum width */
+        
+    }
+
+
+    h2 {
+        font-size: 60px; /* Increase the font size */   
+    
+    }
+}
+
+
+
+
+
+/* For desktops and larger screens */
+@media (min-width: 768px) {
+    .services-content-one,
+    .services-content-two {
+        display: flex;
+        flex-direction: row;
+        gap: 10%; /* Add some space between the elements */
+        padding-top: 10% ;
+    }
+ 
+    .servicesOne-image-container,
+    .servicesTwo-image-container {
+        min-height: 400px;
+        min-width: 50%;
+        gap: 10%;
+    }
+
+
+}
+   
+    
+
+    /* Media query for very large screens */
+@media (min-width: 1400px) {
+    main {
+        max-width: 1400px; /* Set a maximum width for the content */
+        margin: 0 auto; /* Center the content */
+    }
+}
+
