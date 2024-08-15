@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1494 830">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .25em;
+      }
+
+      .cls-2 {
+        letter-spacing: .27em;
+      }
+
+      .cls-3 {
+        letter-spacing: .17em;
+      }
+
+      .cls-4 {
+        fill: #fabebe;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        stroke-width: 0px;
+      }
+
+      .cls-7 {
+        font-family: BodoniFLF-Bold, BodoniFLF;
+        font-size: 105px;
+        font-weight: 700;
+        letter-spacing: .05em;
+      }
+
+      .cls-7, .cls-8, .cls-6 {
+        fill: #aed5e2;
+      }
+
+      .cls-9 {
+        letter-spacing: .39em;
+      }
+
+      .cls-10 {
+        letter-spacing: .21em;
+      }
+
+      .cls-8 {
+        font-family: Queensides-Medium, Queensides;
+        font-size: 83px;
+        font-weight: 500;
+      }
+
+      .cls-11 {
+        letter-spacing: .23em;
+      }
+
+      .cls-12 {
+        letter-spacing: .22em;
+      }
+
+      .cls-5 {
+        fill: #f6bf85;
+      }
+    </style>
+  </defs>
+  <g id="Raindow">
+    <g id="RaindowRing1">
+      <path class="cls-5" d="M449.43,548.5s-5.92-187.21-132.93-185.61c0,0-130.01-3.39-133.15,185.61h36.28s-2.14-148,98.86-149c0,0,85-6,93.89,149"/>
+    </g>
+    <g id="RainbowRing2">
+      <path class="cls-4" d="M460.39,548.5s1.4-205.45-144.99-205.98c0,0-144.4-1.52-148.3,205.98h-41.57s.74-237.64,187.61-247.57c0,0,175.86-15.93,187.32,247.57h-40.06Z"/>
+    </g>
+    <g id="RainbowRing3">
+      <path class="cls-6" d="M546.57,548.5c.56,1.86.85-280.12-236.07-293.67,0,0-210.5-15.83-228,293.67l32.5.5s0-260,195.5-265.07c0,0,183.5-13.93,207.34,264.57"/>
+    </g>
+  </g>
+  <g id="Therapy">
+    <text class="cls-8" transform="translate(568.24 540.87)"><tspan class="cls-11" x="0" y="0">T</tspan><tspan class="cls-9" x="63.01" y="0">H</tspan><tspan class="cls-2" x="139.11" y="0">E</tspan><tspan class="cls-10" x="204.72" y="0">R</tspan><tspan class="cls-12" x="269.03" y="0">A</tspan><tspan class="cls-3" x="352.79" y="0">P</tspan><tspan class="cls-1" x="412.44" y="0">Y</tspan></text>
+  </g>
+  <g id="MindfulLeaps">
+    <text class="cls-7" transform="translate(569.62 445.36)"><tspan x="0" y="0">MINDFUL LEAPS</tspan></text>
+  </g>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</svg>

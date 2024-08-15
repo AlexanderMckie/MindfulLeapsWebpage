@@ -10,7 +10,7 @@
 }
 
 body{
-    background: rgb(113, 182, 223);
+    background: linear-gradient(to bottom, #285486, #5c40db,#6983a0,#a1b6ce);;
 }
 .skyImage {
     width: 100%;
@@ -100,6 +100,7 @@ nav {
     z-index: 100;
     backdrop-filter: blur(5px);
     border-radius: 20px;
+    
 }
 .ham-menu span {
     height: 15px;
@@ -134,6 +135,8 @@ nav {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
+.MainHeader{   
+}
 
 
 /* the main sections and thier components  */
@@ -150,12 +153,13 @@ section {
     z-index: -20;
 }
 h2{
-    color: #bcc541;
-    font-size: 50px;
+    color: #e7ee8b;
+    font-size: 3rem;
     font-family: 'Sora', sans-serif; 
     text-align: center;
-    padding: 10%;
+    padding: 5%;
     text-shadow: 2px 6px 8px rgba(0, 0, 0, 0.5);
+    letter-spacing: 3px;
 }
 p {
     color: #eec876;
@@ -163,29 +167,32 @@ p {
     font-family: 'Montserrat', sans-serif; 
     
 }
+
 .about-content {
     display: flex;
     flex-direction: column; /* Stack elements vertically by default (mobile-first) */
     padding: 10%; /* Space between elements */
     flex: 1; /* Take up remaining space */
     gap: 5%;
+    
+    
 }
-.about-content p {
-    flex: 1; /* Take up remaining space */
-}
+
 .about-image-container {
     position: relative;
     overflow: hidden; /* Ensure the image doesn't overflow the container */
+    object-fit: cover;
     width: 100%; /* Set a fixed width for the container */
     height: 600px; /* Set a fixed height for the container */
-    border-radius: 30px;
+    border-radius: 15px;
 }
 .AboutImage {
     width: 150%; /* Increase the width to ensure the image covers the container */
-    height: 100%;
+    height: 150%;
     object-fit: cover; /* Ensure the image covers the container without being cut off */
     position: absolute;
-    left: -47%; /* Adjust the left property to move the image to the left */
+    left: -47%;
+    top: -20%; /* Adjust the left property to move the image to the left */
 }
 .services-content {
     display: flex;
@@ -214,17 +221,26 @@ p {
     position: absolute;
     width: 150%;
     height: 150%; /* Make the parallax container the same height as the image container */
-    overflow: hidden;
+    object-fit: cover;
 }
 
+
+
+
+
+
+
+
+
 .contact label {
-    color: #dad862;
+    color: #fffcb1;
     font-size: 30px;
     font-family: 'Montserrat', sans-serif; 
     padding: 10px;
     align-content: center;
 }
-.contact{
+/* General styling for contact section */
+.contact {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -232,17 +248,110 @@ p {
     text-align: center;
     padding: 20px;
 }
-.contact input {
-    align-content: center;
-    width: 90%;
+
+/* Styling for form inside contact section */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    width: 100%; /* Ensure form takes full width of its container */
+}
+
+/* Styling for form groups */
+.form-group, .name-group {
+    display: flex;
+    flex-direction: column; /* Arrange label and input in a column */
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Styling for labels */
+.form-group label, .name-group label {
+    color: #fffcb1;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
     padding: 10px;
-    margin: 10px 0;
+    text-align: center;
+    width: 100%; /* Ensure label takes full width of its container */
+}
+
+/* Styling for common input fields */
+.common-input,
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Ensure inputs take up most of the form width */
+    padding: 10px;
     border-radius: 10px;
     border: none;
     background-color: #1709587a;
     color: white;
-    height: 30%;
+    height: 3rem;
+    margin: 10px 0; /* Add margin for spacing between inputs */
+    font-family: 'Arial', sans-serif; /* Set font family */
+    font-size: 1.5rem; /* Set font size */
+    color: #e9e2e2; /* Set text color */
 }
+
+#concerns,#additional-info,#hear-about-us {
+    height: 6rem; /* Adjust this value to set the desired height */
+}
+
+/* Placeholder styling */
+.contact input::placeholder,
+.contact textarea::placeholder {
+    color: #e9e2e2;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Specific group styling */
+.name-group input {
+    width: 100%; /* Ensure inputs take up most of the form width */
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1709587a;
+    color: white;
+    height: 3rem;
+    margin: 10px 0; /* Add margin for spacing between inputs */
+}
+    
+
+
+.funding-group {
+    display: flex;
+    flex-direction: column; /* Arrange checkboxes in a column */
+    align-items: center;
+    width: 100%;
+    gap: 10px; /* Adjust the gap between checkboxes and labels */
+}
+
+.funding-group input[type="checkbox"] {
+    margin-right: 5px; /* Adjust the space between checkbox and label */
+}
+
+.funding-label {
+    color: #e6d0d0;
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
+}
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #da78f3;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
 
     
 
@@ -331,9 +440,39 @@ footer{
         min-width: 50%;
         gap: 10%;
     }
+    .form-group {
+        flex-direction: row; /* Change to row layout for desktop */
+        justify-content: space-between;
+        
+    }
 
+    .form-group label  {
+        flex: 1;
+        text-align: right;
+        margin-right: 20px;
+        
+    }
+    .name-group label{
+        width: 100%;
+    }
 
+    .common-input,
+    .form-group input,
+    .form-group textarea {
+        flex: 2;
+        width: 100%;
+        margin: 0; /* Remove margin for desktop view */
+    }
+    .name-group input {
+        width: 100%;
+        border-radius: 10px;
+        height: 3rem;
+        margin: 10px 0;
+    }
 }
+
+
+
    
     
 

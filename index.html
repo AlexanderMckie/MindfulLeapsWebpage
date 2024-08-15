@@ -19,7 +19,6 @@
         <span></span>
     </div>
     <header class="MainHeader" id="MainHeader">
-<img src="assets/images/sky.jpg" alt="skyImage" class="skyImage">
 <img src="assets/images/Header.svg" alt="HeaderImage" class="HeaderImage">
     </header>
     <nav class="off-screen-menu" id="off-screen-menu">
@@ -33,7 +32,7 @@
 
   
     <main>
-        <section id="about" >
+        <section class="about" id="about" >
             <h2>About</h2>
             <div class="about-content">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minima perspiciatis, illo esse similique itaque libero quis quas laborum quisquam! Eos mollitia, praesentium quibusdam cum delectus earum unde nemo aliquid!
@@ -71,63 +70,72 @@
         </section>
         <section id="contact" class="contact">
             <h2>Contact Us</h2>
-            <form action="#" method="post">
-                <div>
+            <form action="https://formsubmit.co/alexkmckie@gmail.com" method="post">
+                <div class="form-group">
                     <label for="child-first-name">Child's Name *</label>
-                    <input type="text" id="child-first-name" name="child-first-name" placeholder="First" required>
-                    <input type="text" id="child-last-name" name="child-last-name" placeholder="Last" required>
+                    <div class="name-group">
+                        <input type="text" id="child-first-name" name="child-first-name" placeholder="First" required>
+                        <input type="text" id="child-last-name" name="child-last-name" placeholder="Last" required>
+                    </div>
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="child-dob">Child's Date of Birth *</label>
                     <input type="date" id="child-dob" name="child-dob" required>
                 </div>
-                <div>
-                    <label for="referral-first-name">Name of person making referral: *</label>
-                    <input type="text" id="referral-first-name" name="referral-first-name" placeholder="First" required>
-                    <input type="text" id="referral-last-name" name="referral-last-name" placeholder="Last" required>
+                <div class="form-group">
+                    <label for="referral-first-name">Name of person making referral *</label>
+                    <div class="name-group">
+                        <input type="text" id="referral-first-name" name="referral-first-name" placeholder="First" required>
+                        <input type="text" id="referral-last-name" name="referral-last-name" placeholder="Last" required>
+                    </div>
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="relationship">Relationship to Child *</label>
                     <input type="text" id="relationship" name="relationship" required>
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="email">Email *</label>
                     <input type="email" id="email" name="email" required>
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="phone">Phone Number *</label>
                     <input type="tel" id="phone" name="phone" required>
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="address">Address *</label>
                     <textarea id="address" name="address" required></textarea>   
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="diagnosis">Diagnosis</label>
                     <input type="text" id="diagnosis" name="diagnosis">
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="concerns">Concerns *</label>
-                    <textarea id="concerns" name="concerns" required></textarea>
-                    <small>Please provide as much detail as possible</small>
+                    <textarea id="concerns" placeholder="Please provide as much detail as" name="concerns" required></textarea>
+                    
                 </div>
-                <div>
-                    <label for="funding">Funding: *</label>
-                    <div id="funding">
-                        <input type="checkbox" id="medicare-plan" name="funding" value="medicare-plan" required>
-                        <label for="medicare-plan">Medicare Plan</label>
-                        <input type="checkbox" id="private-plan" name="funding" value="private-plan" required>
-                        <label for="private-plan">Private</label>
+                <div class="form-group">
+                    <label for="funding">Funding *</label>
+                    <div id="funding" class="funding-group">
+                        <div class="funding-label">
+                            <input type="radio" id="medicare-plan" name="funding" value="medicare-plan" required>
+                            <label for="medicare-plan">Medicare Plan</label>
+                        </div>
+                        <div class="funding-label">
+                            <input type="radio" id="private-plan" name="funding" value="private-plan" required>
+                            <label for="private-plan">Private</label>
+                        </div>
                     </div>
-                <div>
+                </div>
+                <div class="form-group">
                     <label for="additional-info">Additional information</label>
                     <textarea id="additional-info" name="additional-info"></textarea>
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="hear-about-us">How did you hear about us? *</label>
                     <input type="text" id="hear-about-us" name="hear-about-us" required>
                 </div>
-                <div>
+                <div >
                     <button type="submit">Submit</button>
                 </div>
             </form>
@@ -146,20 +154,4 @@
 <script src="assets/js/main.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap.to('.parallax', {
-        yPercent: -50,
-        ease: 'none',
-        scrollTrigger: {
-            trigger: '.about-image-container',
-            start: 'top bottom', // When the top of the container hits the bottom of the viewport
-            end: 'bottom top', // When the bottom of the container hits the top of the viewport
-            scrub: true // Smooth scrubbing
-        }
-    });
-});
-</script>
 </html>
