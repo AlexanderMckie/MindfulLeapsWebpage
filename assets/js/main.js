@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
     applyParallaxEffect('.servicesOne-image-container');    
 });
 
-// grows the textarea as the user types 
 document.addEventListener('input', function (event) {
     if (event.target.tagName.toLowerCase() === 'textarea') {
         autoGrow(event.target);
@@ -42,114 +41,142 @@ function autoGrow(element) {
     element.style.height = (element.scrollHeight) + 'px';
 }
 
-// back gorung generator
+// Configuration objects for each section
+const aboutConfig = [
+    {
+        id: "aboutBorder",
+        svgPath: 'assets/images/BorderOne.svg'
+    },
+    // Add more configuration objects for other sections as needed
+];
+const servicesConfig = [
+    {
+        id: "servicesBorder",
+        svgPath: 'assets/images/BorderTwo.svg'
+    },
+    // Add more configuration objects for other sections as needed
+];
+const contactConfig = [
+    {
+        id: "contactBorder",
+        svgPath: 'assets/images/BorderThree.svg'
+    },
+    // Add more configuration objects for other sections as needed
+];
+const footerConfig = [
+    {
+        id: "footerBorder",
+        svgPath: 'assets/images/BorderFour.svg'
+    },
+    // Add more configuration objects for other sections as needed
+];
+// Universal function to create SVG background
+function createSvgBackground(config) {
+    const section = document.getElementById(config.id);
+    if (!section) {
+        console.error(`Section with id ${config.id} not found`);
+        return;
+    }
 
-
-function createSvgBackground(color1, color2, color3, width, height, points) {
     // Create an SVG element
     const svgNS = "http://www.w3.org/2000/svg";
     const svg = document.createElementNS(svgNS, "svg");
-    svg.setAttribute("width", width);
-    svg.setAttribute("height", height);
+    svg.setAttribute("viewBox", "0 0 1 1");
+    svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
     svg.setAttribute("xmlns", svgNS);
+    svg.style.width = window.innerWidth;
 
-    // Create the first rectangle
-    const rect1 = document.createElementNS(svgNS, "rect");
-    rect1.setAttribute("id", "rect1");
-    rect1.setAttribute("width", points.rect1.width);
-    rect1.setAttribute("height", points.rect1.height);
-    rect1.setAttribute("x", points.rect1.x);
-    rect1.setAttribute("y", points.rect1.y);
-    rect1.setAttribute("fill", color1);
+    svg.style.position = "absolute";
+    svg.style.top = "0";
+    svg.style.left = "0"; // Center the SVG by offsetting it to the left
+    svg.style.transform = "translateY(-50%)";
+    svg.style.zIndex = "-1";
 
-    // Create the second rectangle
-    const rect2 = document.createElementNS(svgNS, "rect");
-    rect2.setAttribute("id", "rect2");
-    rect2.setAttribute("width", points.rect2.width);
-    rect2.setAttribute("height", points.rect2.height);
-    rect2.setAttribute("x", points.rect2.x);
-    rect2.setAttribute("y", points.rect2.y);
-    rect2.setAttribute("fill", color2);
+    // Load the SVG image
+    const image = document.createElementNS(svgNS, "image");
+    image.setAttributeNS('http://www.w3.org/1999/xlink', 'href', config.svgPath);
+    image.setAttribute("width", "100%");
+    image.setAttribute("height", "100%");
+    image.setAttribute("x", "0");
+    image.setAttribute("y", "0");
 
-    // Create the third rectangle
-    const rect3 = document.createElementNS(svgNS, "rect");
-    rect3.setAttribute("id", "rect3");
-    rect3.setAttribute("width", points.rect3.width);
-    rect3.setAttribute("height", points.rect3.height);
-    rect3.setAttribute("x", points.rect3.x);
-    rect3.setAttribute("y", points.rect3.y);
-    rect3.setAttribute("fill", color3);
+    // Append the image to the SVG
+    svg.appendChild(image);
 
-    // Append rectangles to the SVG
-    svg.appendChild(rect1);
-    svg.appendChild(rect2);
-    svg.appendChild(rect3);
+    // Clear any existing content in the section
+    section.innerHTML = '';
 
-    // Convert SVG to data URL
-    const svgData = new XMLSerializer().serializeToString(svg);
-    const svgDataUrl = `data:image/svg+xml;base64,${btoa(svgData)}`;
-
-    return svgDataUrl;
+    // Append the SVG to the section
+    section.style.position = "relative";
+    section.appendChild(svg);
 }
 
-function applySvgBackground(elementId, color1, color2, color3, points) {
-    const element = document.getElementById(elementId);
-    if (element) {
-        const svgBackground = createSvgBackground(color1, color2, color3, "100%", "100%", points);
-        element.style.backgroundImage = `url(${svgBackground})`;
-        element.style.backgroundSize = "cover";
-    }
-}
-
+// Event listener for DOMContentLoaded
 document.addEventListener("DOMContentLoaded", () => {
-    // Define color variables
-    const blue = 'rgb(174, 213, 226)';
-    const orange = 'rgb(246, 191, 133)';
-    const pink = 'rgb(250, 190, 190)';
-
-    // Define the sectionOne variable
-    const sectionOne = document.getElementById("sectionOne");
-
-    // Define points for rectangles
-    const points = {
-        rect1: { width: "100%", height: "300%", x: "0%", y: "0%" },
-        rect2: { width: "100%", height: "10%", x: "45%", y: "0%" },
-        rect3: { width: "100%", height: "20%", x: "90%", y: "0%" }
-    };
-
-    // Apply SVG background
-    applySvgBackground("sectionOne", blue, orange, pink, points); // Apply to the 'sectionOne' section
-
-    // GSAP animations
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap.to("#rect1", {
-        scrollTrigger: {
-            trigger: sectionOne,
-            start: "top center",
-            end: "bottom center",
-            scrub: true
-        },
-        y: -50 // Adjust this value as needed
+    // Apply SVG background to each section
+    aboutConfig.forEach(config => {
+        createSvgBackground(config);
+    });
+    servicesConfig.forEach(config => {
+        createSvgBackground(config);
+    });
+    contactConfig.forEach(config => {
+        createSvgBackground(config);
+    });
+    footerConfig.forEach(config => {
+        createSvgBackground(config);
     });
 
-    gsap.to("#rect2", {
-        scrollTrigger: {
-            trigger: sectionOne,
-            start: "top center",
-            end: "bottom center",
-            scrub: true
-        },
-        y: 50 // Adjust this value as needed
-    });
-
-    gsap.to("#rect3", {
-        scrollTrigger: {
-            trigger: sectionOne,
-            start: "top center",
-            end: "bottom center",
-            scrub: true
-        },
-        y: -50 // Adjust this value as needed
+    // Reapply SVG background on window resize for each section
+    window.addEventListener('resize', () => {
+        aboutConfig.forEach(config => {
+            createSvgBackground(config);
+        });
+        servicesConfig.forEach(config => {
+            createSvgBackground(config);
+        });
+        contactConfig.forEach(config => {
+            createSvgBackground(config);
+        });
+        footerConfig.forEach(config => {
+            createSvgBackground(config);
+        });
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray('.therapy-step').forEach((step, index) => {
+        // Animate the .therapy-step container
+        gsap.fromTo(step, 
+            { opacity: 0, y: 50 }, 
+            { 
+                opacity: 1, 
+                y: 0, 
+                scrollTrigger: {
+                    trigger: step,
+                    start: 'top 90%', // Adjust this value as needed
+                    end: 'top 20%',
+                    scrub: true,
+                    toggleActions: 'play none none reverse',
+                    onEnter: () => {
+                        // Animate the <p> element inside the .therapy-step container
+                        gsap.to(step.querySelector('p'), { opacity: 1, duration: 1 });
+                    },
+                    onLeaveBack: () => {
+                        // Hide the <p> element when scrolling back up
+                        gsap.to(step.querySelector('p'), { opacity: 0, duration: 1 });
+                    }
+                }
+            }
+        );
+    });
+});
+const labels = document.querySelectorAll('.referral-first-name');
+labels.forEach(label => {
+    label.innerHTML = label.textContent.replace(/_/g, '<span class="hidden-char">_</span>');
+});
+
+
+
+
