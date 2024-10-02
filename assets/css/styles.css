@@ -542,10 +542,37 @@ padding-bottom: 1rem   ; /* Change this value to the desired font size */
     
 
 
+/* Styling for Who We Are Page  */
 
+.staffHeader{
+    padding-top: 20%;
+}
+.staffSubHeader{
+    padding: 10%;
+}
+.staffContainer{
+    width: 100%;
+    background-color: rgba(174,213,226);
+    z-index: -50;
+    overflow: visible;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.staffContainer p {
+    font-size: 30px; /* Change this value to the desired font size */
+    width: 80%;
+    text-align: center;
+    
 
-
-
+}
+.staffSection{
+    display: flex;
+    flex-direction: column; /* Stack elements vertically by default (mobile-first) */
+    justify-content: center;
+    align-items: center;
+}
 
 
 
