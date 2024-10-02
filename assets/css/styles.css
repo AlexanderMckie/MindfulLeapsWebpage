@@ -220,6 +220,15 @@ p {
     font-style: normal;
 }
 
+
+
+
+
+/* Styling for the index page */
+
+
+
+
 .aboutContainer{
     width: 100%;
     background-color: rgba(174,213,226);
@@ -267,102 +276,6 @@ p {
 .aboutHeaderTwo{
     margin-top: 10%;
 }
-.servicesTextOne, .servicesTextTwo{
-    width: 80%;
-    margin: 0 auto; /* Center horizontally */
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    text-align: center; /* Ensure text is centered within its container */
-    
-}
-.servicesTextTwo{
-    margin-bottom: 10%;
-}
-.servicesContainer{
-    width: 100%;
-    background-color: rgba(246,191,133);
-    z-index: -50;
-    overflow: visible;
-    position: relative;
-}
-.servicesHeader,.aboutHeader
-{
-    padding-top: 20%;
-    padding-bottom: 10%;
-}
-.contactHeader{
-    padding-top: 40%;
-}
-.services-content-one, .services-content-two {
-    display: flex;
-    flex-direction: column; /* Stack elements vertically by default (mobile-first) */
-    padding: 10%; /* Space between elements */
-    flex: 1; /* Take up remaining space */
-
-}
-
-.services-content-one p,
-.services-content-two p {
-padding-bottom: 1rem   ; /* Change this value to the desired font size */
-}
-
-.servicesOne-image-container {
-    position: relative;
-    overflow: hidden; /* Ensure the image doesn't overflow the container */
-    width: 100%; /* Set a fixed width for the container */
-    height: 600px; /* Set a fixed height for the container */
-    border-radius: 30px;
-    margin-top: 10%;
-    margin-bottom: -10%;
-}
-.servicesTwo-image-container{
-    position: relative;
-    overflow: hidden; /* Ensure the image doesn't overflow the container */
-    width: 100%; /* Set a fixed width for the container */
-    height: 600px; /* Set a fixed height for the container */
-    border-radius: 30px;
-    display: none;
-}
-.ServicesTwoImage,
-.ServicesOneImage {
-    width: 150%; /* Increase the width to ensure the image covers the container */
-    height: 100%;
-    object-fit: cover; /* Ensure the image covers the container without being cut off */
-    position: absolute;
-    left: -25%; /* Adjust the left property to move the image to the left */
-}
-.parallax {
-    position: absolute;
-    width: 150%;
-    height: 150%; /* Make the parallax container the same height as the image container */
-    object-fit: cover;
-}
-.therapy-process-container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.therapy-step-container {
-    margin-bottom: 20px;
-}
-
-.therapy-step {
-    opacity: 0; /* Initially hidden */
-    font-size: 1.2rem;
-    padding: 10px;
-    border-radius: 5px;
-}
-.therapy-step p {
-    opacity: 0; /* Initially hidden */
-    transition: opacity .5s ease-in-out; /* Smooth transition */
-}
-.therapy-step h3{
-    margin:10%;
-}
-
-
 
 
 
@@ -510,8 +423,122 @@ button {
 
     
 
+/* Styling for What WE do Page  */
 
 
+
+.headerContainerWhatWeDo{
+    margin-top:20%;
+}
+
+.servicesTextOne, .servicesTextTwo{
+    width: 80%;
+    margin: 0 auto; /* Center horizontally */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Ensure text is centered within its container */
+    
+}
+.servicesTextTwo{
+    margin-bottom: 10%;
+}
+.servicesContainer{
+    width: 100%;
+    background-color: rgba(174,213,226);
+    
+    z-index: -50;
+    overflow: visible;
+    position: relative;
+}
+.servicesHeader,.aboutHeader
+{
+    padding-top: 20%;
+    padding-bottom: 10%;
+}
+.contactHeader{
+    padding-top: 40%;
+}
+.services-content-one, .services-content-two {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically by default (mobile-first) */
+    padding: 10%; /* Space between elements */
+    flex: 1; /* Take up remaining space */
+
+}
+
+.services-content-one p,
+.services-content-two p {
+padding-bottom: 1rem   ; /* Change this value to the desired font size */
+}
+
+.servicesOne-image-container {
+    position: relative;
+    overflow: hidden; /* Ensure the image doesn't overflow the container */
+    width: 100%; /* Set a fixed width for the container */
+    height: 600px; /* Set a fixed height for the container */
+    border-radius: 30px;
+    margin-top: 10%;
+    margin-bottom: -10%;
+}
+.servicesTwo-image-container{
+    position: relative;
+    overflow: hidden; /* Ensure the image doesn't overflow the container */
+    width: 100%; /* Set a fixed width for the container */
+    height: 600px; /* Set a fixed height for the container */
+    border-radius: 30px;
+    display: none;
+}
+.ServicesTwoImage,
+.ServicesOneImage {
+    width: 150%; /* Increase the width to ensure the image covers the container */
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container without being cut off */
+    position: absolute;
+    left: -25%; /* Adjust the left property to move the image to the left */
+}
+.parallax {
+    position: absolute;
+    width: 150%;
+    height: 150%; /* Make the parallax container the same height as the image container */
+    object-fit: cover;
+}
+.therapy-process-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.therapy-step-container {
+    margin-bottom: 20px;
+}
+
+.therapy-step {
+    opacity: 0; /* Initially hidden */
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+.therapy-step p {
+    opacity: 0; /* Initially hidden */
+    transition: opacity .5s ease-in-out; /* Smooth transition */
+}
+.therapy-step h3{
+    margin:10%;
+}
+
+
+
+
+
+
+.TheTherapyProcess{
+    width: 100%;
+    background-color: rgba(246,191,133);
+    z-index: -50;
+    overflow: visible;
+    position: relative;
+}
     
 
 

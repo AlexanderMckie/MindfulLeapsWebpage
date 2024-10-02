@@ -70,6 +70,20 @@ const footerConfig = [
     },
     // Add more configuration objects for other sections as needed
 ];
+const WhatWedoHeaderConfig = [
+    {
+        id: "WhatWeDoHeader",
+        svgPath: 'assets/images/WhatWeDoHeader.svg'
+    },
+    // Add more configuration objects for other sections as needed
+];
+const WhatWedoFooterConfig = [
+    {
+        id: "footerBorderWhatWeDo",
+        svgPath: 'assets/images/WhatWeDoFooter.svg'
+    },
+    // Add more configuration objects for other sections as needed
+];
 // Universal function to create SVG background
 function createSvgBackground(config) {
     const section = document.getElementById(config.id);
@@ -126,6 +140,12 @@ document.addEventListener("DOMContentLoaded", () => {
     footerConfig.forEach(config => {
         createSvgBackground(config);
     });
+    WhatWedoHeaderConfig.forEach(config => {    
+        createSvgBackground(config);
+    });
+    WhatWedoFooterConfig.forEach(config => {    
+        createSvgBackground(config);
+    });
 
     // Reapply SVG background on window resize for each section
     window.addEventListener('resize', () => {
@@ -139,6 +159,12 @@ document.addEventListener("DOMContentLoaded", () => {
             createSvgBackground(config);
         });
         footerConfig.forEach(config => {
+            createSvgBackground(config);
+        }); 
+        WhatWedoHeaderConfig.forEach(config => {
+            createSvgBackground(config);
+        });
+        WhatWedoFooterConfig.forEach(config => {
             createSvgBackground(config);
         });
     });
