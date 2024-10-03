@@ -544,14 +544,15 @@ padding-bottom: 1rem   ; /* Change this value to the desired font size */
 
 /* Styling for Who We Are Page  */
 
-.staffHeader{
-    padding-top: 20%;
+.WhatWeDoHeader{
+    margin-top: 20%;
 }
-.staffSubHeader{
-    padding: 10%;
+.staffSubHeader,.staffHeader{
+padding: 10%;
 }
+
 .staffContainer{
-    width: 100%;
+   
     background-color: rgba(174,213,226);
     z-index: -50;
     overflow: visible;
@@ -559,19 +560,23 @@ padding-bottom: 1rem   ; /* Change this value to the desired font size */
     justify-content: center;
     align-items: center;
     display: flex;
+    flex-direction: column;
+    padding-top: 20%;
 }
-.staffContainer p {
+.staffContainer,.staffContainerTwo p {
     font-size: 30px; /* Change this value to the desired font size */
-    width: 80%;
-    text-align: center;
-    
-
+    align-self: center;
+    padding-left: 10%;
+   padding-right: 10%;
 }
-.staffSection{
-    display: flex;
-    flex-direction: column; /* Stack elements vertically by default (mobile-first) */
+.staffContainerTwo{
+    background-color: rgba(246,191,133);
+    z-index: -50;
+    overflow: visible;
+    position: relative;
     justify-content: center;
     align-items: center;
+    padding-top: 20%;
 }
 
 
@@ -582,7 +587,44 @@ padding-bottom: 1rem   ; /* Change this value to the desired font size */
 footer{ 
     padding-top: 30%; 
     text-align: center; 
+    padding-bottom: 10%;
+
+}
+.footerText{
+    font-size: 1.5rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 500;
+    color: #260e30;
+    padding: 10px;
     text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; 
+}
+.flagContainer {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically */
+    gap: 10px; /* Add some space between the images */
+    padding: 2%;
+}
+
+.flagContainer img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+}
+.footerCopyPrivacy{
+    font-size: 2rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 500;
+    color: #260e30;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; 
 }
     
 
