@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Apply the parallax effect to each image container
-    applyParallaxEffect('.about-image-container');
+    applyParallaxEffect('.aboutImageContainer');
+    applyParallaxEffect('.aboutImageContainerTwo');
     applyParallaxEffect('.servicesTwo-image-container');
     applyParallaxEffect('.servicesOne-image-container');    
 });
@@ -56,6 +57,21 @@ const servicesConfig = [
     },
     // Add more configuration objects for other sections as needed
 ];
+const quoteBorderTopConfig = [
+    {
+        id: "quoteBorderTop",
+        svgPath: 'assets/images/quoteBorderTop.svg'
+    },
+    // Add more configuration objects for other sections as needed
+];
+const quoteBorderBottomConfig = [
+    {
+        id: "quoteBorderBottom",
+        svgPath: 'assets/images/quoteBorderBottom.svg'
+    },
+    // Add more configuration objects for other sections as needed
+];
+
 const contactConfig = [
     {
         id: "contactBorder",
@@ -146,6 +162,12 @@ document.addEventListener("DOMContentLoaded", () => {
     WhatWedoFooterConfig.forEach(config => {    
         createSvgBackground(config);
     });
+    quoteBorderBottomConfig.forEach(config => { 
+        createSvgBackground(config);
+    }); 
+    quoteBorderTopConfig.forEach(config => {
+        createSvgBackground(config);
+    });    
 
     // Reapply SVG background on window resize for each section
     window.addEventListener('resize', () => {
@@ -167,6 +189,12 @@ document.addEventListener("DOMContentLoaded", () => {
         WhatWedoFooterConfig.forEach(config => {
             createSvgBackground(config);
         });
+        quoteBorderBottomConfig.forEach(config => { 
+            createSvgBackground(config);
+        }); 
+        quoteBorderTopConfig.forEach(config => {
+            createSvgBackground(config);
+        });   
     });
 });
 document.addEventListener('DOMContentLoaded', function() {

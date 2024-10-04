@@ -239,23 +239,18 @@ p {
 
 
 
-.aboutContentOne{
-    display: flex;
-    flex-direction: column; /* Stack elements vertically by default (mobile-first) */
-    padding: 10%; /* Space between elements */
-    flex: 1; /* Take up remaining space */
- 
-       
-}
+.aboutContentOne,
 .aboutContentTwo{
     display: flex;
     flex-direction: column; /* Stack elements vertically by default (mobile-first) */
     padding: 10%; /* Space between elements */
     flex: 1; /* Take up remaining space */
-    gap: 5%;
+      
 }
 
-.about-image-container,.about-image-container-two{
+
+.aboutImageContainer,
+.aboutImageContainerTwo{
     position: relative;
     overflow: hidden; /* Ensure the image doesn't overflow the container */
     object-fit: cover;
@@ -265,6 +260,9 @@ p {
     margin-top: 10%;
     
 }
+.aboutImageContainerTwo{
+    display: none;
+} 
 .AboutImage {
     width: 150%; /* Increase the width to ensure the image covers the container */
     height: 150%;
@@ -274,7 +272,27 @@ p {
     top: -20%; /* Adjust the left property to move the image to the left */
 }
 .aboutHeaderTwo{
-    margin-top: 10%;
+    padding-top: 20%;
+}
+
+.quote{
+    font-size: 5rem;
+    font-family: 'DoodlesOfFun', sans-serif;
+    font-weight: 500;
+    color: #260e30;
+    padding-top: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; 
+    background-color: rgb(250, 190, 190);
+}
+.servicesContainer{
+    width: 100%;
+    background-color: rgba(246,191,133);  
+    z-index: -50;
+    overflow: visible;
+    position: relative;
 }
 
 
@@ -283,6 +301,7 @@ p {
 
 .contactContainer{
     width: 100%;
+    padding-top: -10%;
     background-color: rgba(250,190,190);
     z-index: 1;
     overflow: hidden;
@@ -296,7 +315,7 @@ p {
     position: relative;
 }
 .contactHeader{
-    padding-top: 0;
+    margin-top: -30%;
     padding-bottom: 5%;
 }
 .contactHeaderRefferal{
@@ -443,14 +462,7 @@ button {
 .servicesTextTwo{
     margin-bottom: 10%;
 }
-.servicesContainer{
-    width: 100%;
-    background-color: rgba(174,213,226);
-    
-    z-index: -50;
-    overflow: visible;
-    position: relative;
-}
+
 .servicesHeader,.aboutHeader
 {
     padding-top: 20%;
@@ -650,10 +662,11 @@ footer{
 
     
 
-    .aboutContentOne {
+    .aboutContentOne,
+    .aboutContentTwo {
         display: flex;
-
-        flex-direction: row; /* Position elements side by side on larger screens */
+        flex-direction: row;
+        padding: 5%; /* Position elements side by side on larger screens */
     }
 
     .aboutContentOne p {
@@ -661,11 +674,21 @@ footer{
         flex-direction: row;
         margin-right: 10%;
     }
-    .about-image-container {
-        max-width: 50%; /* Optional: Set a maximum width */
+    .aboutContentTwo p {
+        flex: 1; /* Take up remaining space */
+        flex-direction: row;
+        margin-left: 10%;
+    }
+    .aboutImageContainer,
+    .aboutImageContainerTwo{
+        max-width: 45%; /* Optional: Set a maximum width */
         margin-top: 0;
        
     }
+    .aboutImageContainerTwo{
+        display: block;
+    } 
+
 
 
     h2 {
