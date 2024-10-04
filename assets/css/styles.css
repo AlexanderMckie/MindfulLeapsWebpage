@@ -6,6 +6,12 @@
     font-family: 'DoodlesOfFun';
     src: url('fonts/DoodlesOfFun.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'SummerGroovy';
+    src: url('../fonts/SummerGroovy.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .overpass-medium {
     font-family: "Overpass", sans-serif;
@@ -187,7 +193,7 @@ section {
 h2{
     color: #211527;
     font-size: 8rem;
-    font-family: 'DoodlesOfFun', sans-serif;
+    font-family: 'SummerGroovy', sans-serif;
     text-align: center;
     
     letter-spacing: 3px;
@@ -196,7 +202,7 @@ h2{
 h3{
     color: #211527;
     font-size: 4rem;
-    font-family: 'DoodlesOfFun', sans-serif;
+    font-family: 'SummerGroovy', sans-serif;
     text-align: center; 
     letter-spacing: 2px;
 }
@@ -274,27 +280,43 @@ p {
 .aboutHeaderTwo{
     padding-top: 20%;
 }
-
+.quoteContainer{
+    width: 100%;
+  
+    z-index: -50;
+    overflow: visible;
+    position: relative;
+}
 .quote{
     font-size: 5rem;
     font-family: 'DoodlesOfFun', sans-serif;
     font-weight: 500;
-    color: #260e30;
+  
     padding-top: 5%;
     text-align: center;
     display: flex;
     justify-content: center; /* Center the images horizontally */
     align-items: center; 
+    z-index: 2;
     background-color: rgb(250, 190, 190);
+
 }
-.servicesContainer{
+.quote p{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+
+#quote.visible {
+    opacity: 1;
+}
+.missionContainer{
     width: 100%;
     background-color: rgba(246,191,133);  
     z-index: -50;
     overflow: visible;
     position: relative;
 }
-
 
 
 
@@ -450,6 +472,13 @@ button {
     margin-top:20%;
 }
 
+.servicesContainer{
+    width: 100%;
+    background-color: rgba(174,213,226);
+    z-index: -50;
+    overflow: visible;
+    position: relative;
+}
 .servicesTextOne, .servicesTextTwo{
     width: 80%;
     margin: 0 auto; /* Center horizontally */
@@ -546,7 +575,8 @@ padding-bottom: 1rem   ; /* Change this value to the desired font size */
 
 .TheTherapyProcess{
     width: 100%;
-    background-color: rgba(246,191,133);
+    background-color: rgba(246,191,133);  
+    
     z-index: -50;
     overflow: visible;
     position: relative;
