@@ -45,20 +45,15 @@ function autoGrow(element) {
 }
 
 // Configuration objects for each section
-const aboutConfig = [
+
+const borderTopConfig = [
     {
-        id: "aboutBorder",
-        svgPath: 'assets/images/BorderOne.svg'
+        id: "borderTop",
+        svgPath: 'assets/images/BorderTop.svg'
     },
     // Add more configuration objects for other sections as needed
 ];
-const servicesConfig = [
-    {
-        id: "servicesBorder",
-        svgPath: 'assets/images/BorderTwo.svg'
-    },
-    // Add more configuration objects for other sections as needed
-];
+
 const quoteBorderTopConfig = [
     {
         id: "quoteBorderTop",
@@ -74,27 +69,28 @@ const quoteBorderBottomConfig = [
     // Add more configuration objects for other sections as needed
 ];
 
-const contactConfig = [
+const BorderBlueToOrangeConfig = [
     {
-        id: "contactBorder",
-        svgPath: 'assets/images/BorderThree.svg'
+        id: "BorderBlueToOrange",
+        svgPath: 'assets/images/BorderBlueToOrange.svg'
     },
     // Add more configuration objects for other sections as needed
 ];
-const footerConfig = [
+const BorderBottomPinkConfig = [
     {
-        id: "footerBorder",
-        svgPath: 'assets/images/BorderFour.svg'
+        id: "BorderBottomPink",
+        svgPath: 'assets/images/BorderBottomPink.svg'
     },
     // Add more configuration objects for other sections as needed
 ];
-const WhatWedoHeaderConfig = [
+const borderBottomOrangeConfig = [
     {
-        id: "WhatWeDoHeader",
-        svgPath: 'assets/images/WhatWeDoHeader.svg'
+        id: "borderBottomOrange",
+        svgPath: 'assets/images/BorderBottomOrange.svg'
     },
     // Add more configuration objects for other sections as needed
 ];
+
 const WhatWedoFooterConfig = [
     {
         id: "footerBorderWhatWeDo",
@@ -146,51 +142,42 @@ function createSvgBackground(config) {
 // Event listener for DOMContentLoaded
 document.addEventListener("DOMContentLoaded", () => {
     // Apply SVG background to each section
-    aboutConfig.forEach(config => {
+
+
+    BorderBlueToOrangeConfig .forEach(config => {
         createSvgBackground(config);
     });
-    servicesConfig.forEach(config => {
+    BorderBottomPinkConfig.forEach(config => {
         createSvgBackground(config);
     });
-    contactConfig.forEach(config => {
+    borderBottomOrangeConfig.forEach(config => {
         createSvgBackground(config);
     });
-    footerConfig.forEach(config => {
-        createSvgBackground(config);
-    });
-    WhatWedoHeaderConfig.forEach(config => {    
-        createSvgBackground(config);
-    });
-    WhatWedoFooterConfig.forEach(config => {    
-        createSvgBackground(config);
-    });
+  
     quoteBorderBottomConfig.forEach(config => { 
         createSvgBackground(config);
     }); 
     quoteBorderTopConfig.forEach(config => {
         createSvgBackground(config);
-    });    
+    });    borderTop
+    borderTopConfig.forEach(config => {
+        createSvgBackground(config);
+    });
 
     // Reapply SVG background on window resize for each section
     window.addEventListener('resize', () => {
-        aboutConfig.forEach(config => {
+
+   
+        BorderBlueToOrangeConfig .forEach(config => {
             createSvgBackground(config);
         });
-        servicesConfig.forEach(config => {
-            createSvgBackground(config);
-        });
-        contactConfig.forEach(config => {
-            createSvgBackground(config);
-        });
-        footerConfig.forEach(config => {
+        BorderBottomPinkConfig.forEach(config => {
             createSvgBackground(config);
         }); 
-        WhatWedoHeaderConfig.forEach(config => {
+        borderBottomOrangeConfig.forEach(config => {
             createSvgBackground(config);
         });
-        WhatWedoFooterConfig.forEach(config => {
-            createSvgBackground(config);
-        });
+      
         quoteBorderBottomConfig.forEach(config => { 
             createSvgBackground(config);
         }); 
