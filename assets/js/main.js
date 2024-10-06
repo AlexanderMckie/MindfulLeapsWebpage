@@ -28,7 +28,9 @@ document.addEventListener('DOMContentLoaded', function() {
     applyParallaxEffect('.aboutImageContainer');
     applyParallaxEffect('.aboutImageContainerTwo');
     applyParallaxEffect('.servicesTwo-image-container');
-    applyParallaxEffect('.servicesOne-image-container');    
+    applyParallaxEffect('.servicesOne-image-container'); 
+    applyParallaxEffect('.imageSixContainer'); 
+    applyParallaxEffect('.imageSevenContainer '); 
 });
 
 document.addEventListener('input', function (event) {
@@ -120,7 +122,7 @@ function createSvgBackground(config) {
     svg.style.top = "0";
     svg.style.left = "0"; // Center the SVG by offsetting it to the left
     svg.style.transform = "translateY(-50%)";
-    svg.style.zIndex = "-1";
+    svg.style.zIndex = "-2";
 
     // Load the SVG image
     const image = document.createElementNS(svgNS, "image");
