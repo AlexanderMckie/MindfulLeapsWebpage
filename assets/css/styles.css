@@ -317,11 +317,12 @@ p {
     text-align: center; 
     letter-spacing: 2px;
     padding-top: 5%;
+    padding-bottom: 5%;
     text-align: center;
     display: flex;
     justify-content: center; /* Center the images horizontally */
     align-items: center; 
-    z-index: 2;
+    z-index: -2;
     background-color: rgb(250, 190, 190);
 
 }
@@ -942,6 +943,10 @@ footer{
         overflow-wrap: break-word;  
        
     }
+    .aboutContentTwo
+    {
+        padding: 10%;
+    }
 
 }
 
@@ -966,13 +971,49 @@ footer{
 /* Styles for iPhone 12 Pro Max and similar devices */
 @media (max-width: 430px) {
     /* Your styles here */
-    p{
-        font-size: 1rem ;
+    p, .staffText{
+        font-size: 1.5rem ;
     }
-    h2{
+    h2, .staffHeader{
+        font-size: 4rem;
+        padding-bottom: 10%;
+    }
+    h3, .staffSubHeader{
         font-size: 3rem;
+        padding-bottom: 10%;
+        padding-top: 10%;
     }
-    h3{
+    .aboutContentTwo,
+    .aboutContentOne,
+    .staffContainer,
+    .staffContainerTwo,
+    .services-content-one,
+    .services-content-two{
+        padding: 5%;
+    }
+    .quote{
         font-size: 2rem;
+    }
+     
+    .servicesOne-image-container,
+    .servicesTwo-image-container,
+    .imageSixContainer,
+    .imageSevenContainer,
+    .aboutImageContainer{
+        height: 400px;
+        width: 90%;
+
+    }
+    .footerText{
+        font-size: 1rem;
+      
+    }
+    .footerCopyPrivacy{
+        font-size: 1rem;
+       
+    }
+    footer{
+        padding:0%;
+        padding-top: 20%;
     }
 }
