@@ -963,3 +963,16 @@ footer{
     
 }
 
+/* Styles for iPhone 12 Pro Max and similar devices */
+@media (max-width: 430px) {
+    /* Your styles here */
+    p{
+        font-size: 1rem ;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+}
