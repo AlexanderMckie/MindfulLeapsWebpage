@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }); 
     quoteBorderTopConfig.forEach(config => {
         createSvgBackground(config);
-    });    borderTop
+    });    
     borderTopConfig.forEach(config => {
         createSvgBackground(config);
     });
@@ -183,7 +183,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }); 
         quoteBorderTopConfig.forEach(config => {
             createSvgBackground(config);
-        });   
+        }); 
+        borderTopConfig.forEach(config => {
+            createSvgBackground(config);
+        });  
     });
 });
 document.addEventListener('DOMContentLoaded', function() {

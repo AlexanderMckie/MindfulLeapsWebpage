@@ -242,16 +242,24 @@ p {
     overflow: hidden;
     position: relative;
 }
-
+.aboutHeader{
+    padding: 5%;
+}
 
 
 .aboutContentOne
 {
     display: flex;
     flex-direction: column; /* Stack elements vertically by default (mobile-first) */
-    padding: 10%; /* Space between elements */
+
+    padding: 5%; /* Space between elements */
     flex: 1; /* Take up remaining space */
       
+}
+.aboutContentTwo{
+     /* Stack elements vertically by default (mobile-first) */
+    padding: 5%; /* Space between elements */
+   
 }
 .aboutContentMission{
     display: flex;
@@ -301,23 +309,21 @@ p {
 }
 
 .aboutHeaderTwo{
-    padding-top: 20%;
+    padding-top: 15%;
+    padding-bottom: 5%;
 }
-.quoteContainer{
-    width: 100%;
-  
-    z-index: -50;
-    overflow: visible;
-    position: relative;
+.aboutContentMission{
+   padding: 5%;
+    
 }
 .quote{
-    font-size: 5rem;
+    font-size: 4rem;
     color: #211527;
     font-family: 'SummerGroovy', sans-serif;
     text-align: center; 
     letter-spacing: 2px;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     text-align: center;
     display: flex;
     justify-content: center; /* Center the images horizontally */
@@ -665,11 +671,11 @@ padding-bottom: 1rem   ; /* Change this value to the desired font size */
 /* Styling for Who We Are Page  */
 
 .WhatWeDoHeader{
-    margin-top: 20%;
+    margin-top: 5%;
 }
 /* Styling for who we are */
 .staffHeader{
-    padding-top: 10%;
+    padding-top: 5%;
     font-size: 5rem;
 }
 .staffSubHeaderTop{
@@ -766,6 +772,19 @@ footer{
     display: flex;
     justify-content: center; /* Center the images horizontally */
     align-items: center; 
+    display: none;
+}
+.footerCopyPrivacyMobile{
+    font-size: 1.5rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 500;
+    color: #260e30;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; 
+    display: block;
 }
     
 
@@ -947,6 +966,15 @@ footer{
     {
         padding: 10%;
     }
+    .footerCopyPrivacy{
+        font-size: 2rem;
+        display: block;
+    }
+    .footerCopyPrivacyMobile{
+       
+        display: none;
+    }
+   
 
 }
 
@@ -955,9 +983,9 @@ footer{
     
 
     /* Media query for very large screens */
-@media (min-width: 1400px) {
+@media (min-width: 1300px) {
     section {
-        max-width: 1400px; /* Set a maximum width for the content */
+        max-width: 1300px; /* Set a maximum width for the content */
         margin: 0 auto; /* Center the content */
         
     }
@@ -1010,10 +1038,15 @@ footer{
     }
     .footerCopyPrivacy{
         font-size: 1rem;
-       
+    }
+    .footerCopyPrivacyMobile{
+        font-size: 1rem;
     }
     footer{
         padding:0%;
         padding-top: 20%;
+    }
+    .flagContainer{
+        max-width: 80%;
     }
 }
