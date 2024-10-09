@@ -316,30 +316,25 @@ p {
    padding: 5%;
     
 }
+.quoteContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; 
+    z-index: -100;
+    background-color: rgb(250, 190, 190);
+    padding: 10%;
+    position: relative;
+}
 .quote{
     font-size: 4rem;
     color: #211527;
     font-family: 'SummerGroovy', sans-serif;
     text-align: center; 
     letter-spacing: 2px;
-    padding-top: 2%;
-    padding-bottom: 2%;
     text-align: center;
-    display: flex;
-    justify-content: center; /* Center the images horizontally */
-    align-items: center; 
-    z-index: -2;
-    background-color: rgb(250, 190, 190);
+    
 
-}
-.quote p{
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-
-#quote.visible {
-    opacity: 1;
 }
 .missionContainer{
     width: 100%;
@@ -362,7 +357,7 @@ p {
     
 }
 .contactBorderSpace{
-    height: 300px;
+    height: 150px;
     z-index: -10;
     background-color: rgb(250, 190, 190);
     position: relative;
@@ -505,7 +500,7 @@ button {
 
 .servicesContainer{
     width: 100%;
-    background-color: rgba(174,213,226);
+    background-color:rgb(246,191,133);
     z-index: -50;
     overflow: visible;
     position: relative;
@@ -758,8 +753,15 @@ footer{
     padding: 2%;
 }
 
+.flagContainer {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 10%; /* Ensure the container has height */
+}
+
 .flagContainer img {
-    width: 100px; /* Adjust the width as needed */
+    width: 80px; /* Adjust the width as needed */
     height: auto; /* Maintain the aspect ratio */
 }
 .footerCopyPrivacy{
@@ -773,6 +775,7 @@ footer{
     justify-content: center; /* Center the images horizontally */
     align-items: center; 
     display: none;
+    
 }
 .footerCopyPrivacyMobile{
     font-size: 1.5rem;
@@ -786,8 +789,9 @@ footer{
     align-items: center; 
     display: block;
 }
-    
-
+.footerCopyPrivacyLink {
+    display: inline;
+}
 
 
 
@@ -886,7 +890,12 @@ footer{
         width: 80%;
         
     }
-
+    .contactBorderSpace{
+        height: 200px;
+        z-index: -10;
+        background-color: rgb(250, 190, 190);
+        position: relative;
+    }
     
 /* Styling for who we are */
     .staffHeader{
@@ -974,7 +983,18 @@ footer{
        
         display: none;
     }
-   
+    .flagContainer {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        margin: 0%; /* Ensure the container has height */
+    }
+    
+    .flagContainer img {
+        width: 80px; /* Adjust the width as needed */
+        height: auto; /* Maintain the aspect ratio */
+    }
+
 
 }
 
@@ -993,6 +1013,9 @@ footer{
         max-width: 1000px;
         margin: 0 auto;
     }
+    .contactBorderSpace{
+        height: 300px;
+      
     
 }
 
@@ -1046,7 +1069,8 @@ footer{
         padding:0%;
         padding-top: 20%;
     }
-    .flagContainer{
-        max-width: 80%;
+    .contactBorderSpace{
+        height: 100px;
     }
+   
 }
