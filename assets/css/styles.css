@@ -500,7 +500,7 @@ button {
 
 .servicesContainer{
     width: 100%;
-    background-color:rgb(246,191,133);
+    background-color:rgb(174,213,226);
     z-index: -50;
     overflow: visible;
     position: relative;
@@ -719,6 +719,7 @@ font-size: 1.8rem;
     justify-content: center;
     align-items: center;
     padding-top: 20%;
+   
 }
 
 
@@ -1018,6 +1019,7 @@ footer{
       
     
 }
+}
 
 /* Styles for iPhone 12 Pro Max and similar devices */
 @media (max-width: 430px) {
@@ -1051,7 +1053,7 @@ footer{
     .imageSixContainer,
     .imageSevenContainer,
     .aboutImageContainer{
-        height: 400px;
+        max-height: 400px;
         width: 90%;
 
     }
