@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1322.33 809.7">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .25em;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        isolation: isolate;
+      }
+
+      .cls-1, .cls-3, .cls-4, .cls-10, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        fill: #aed5e2;
+      }
+
+      .cls-1, .cls-3, .cls-4, .cls-6, .cls-7, .cls-8, .cls-9 {
+        font-family: Queensides-Medium, Queensides;
+        font-size: 129.57px;
+        font-weight: 500;
+      }
+
+      .cls-11 {
+        fill: #f6bf85;
+      }
+
+      .cls-11, .cls-10, .cls-12 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        letter-spacing: .27em;
+      }
+
+      .cls-4 {
+        letter-spacing: .22em;
+      }
+
+      .cls-5 {
+        font-family: BodoniFLF-Bold, BodoniFLF;
+        font-size: 163.92px;
+        font-weight: 700;
+        letter-spacing: .05em;
+      }
+
+      .cls-6 {
+        letter-spacing: .17em;
+      }
+
+      .cls-7 {
+        letter-spacing: .23em;
+      }
+
+      .cls-12 {
+        fill: #fabebe;
+      }
+
+      .cls-8 {
+        letter-spacing: .39em;
+      }
+
+      .cls-9 {
+        letter-spacing: .21em;
+      }
+    </style>
+  </defs>
+  <g id="Raindow">
+    <g id="RaindowRing1">
+      <path class="cls-11" d="m835.83,458.66s-9.24-292.26-207.52-289.76c0,0-202.96-5.29-207.86,289.76h56.64s-3.34-231.04,154.33-232.61c0,0,132.69-9.37,146.57,232.61"/>
+    </g>
+    <g id="RainbowRing2">
+      <path class="cls-12" d="m852.94,458.66s2.19-320.73-226.35-321.56c0,0-225.42-2.37-231.51,321.56h-64.9s1.16-370.98,292.88-386.48c0,0,274.54-24.87,292.43,386.48h-62.55Z"/>
+    </g>
+    <g id="RainbowRing3">
+      <path class="cls-10" d="m987.48,458.66c.87,2.9,1.33-437.3-368.53-458.45,0,0-328.61-24.71-355.93,458.45l50.74.78s0-405.89,305.2-413.8c0,0,286.46-21.75,323.68,413.02"/>
+    </g>
+  </g>
+  <g id="Therapy">
+    <g class="cls-2">
+      <text class="cls-7" transform="translate(0 775.92)"><tspan x="0" y="0">T</tspan></text>
+      <text class="cls-8" transform="translate(98.37 775.92)"><tspan x="0" y="0">H</tspan></text>
+      <text class="cls-3" transform="translate(217.17 775.92)"><tspan x="0" y="0">E</tspan></text>
+      <text class="cls-9" transform="translate(319.59 775.92)"><tspan x="0" y="0">R</tspan></text>
+      <text class="cls-4" transform="translate(419.99 775.92)"><tspan x="0" y="0">A</tspan></text>
+      <text class="cls-6" transform="translate(550.75 775.92)"><tspan x="0" y="0">P</tspan></text>
+      <text class="cls-1" transform="translate(643.86 775.92)"><tspan x="0" y="0">Y</tspan></text>
+    </g>
+  </g>
+  <g id="MindfulLeaps">
+    <g class="cls-2">
+      <text class="cls-5" transform="translate(2.15 626.81)"><tspan x="0" y="0">MINDFUL LEAPS</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -43,19 +43,40 @@ body{
     margin: 0 auto;
     overflow:visible;
     margin-bottom: 20%;
-   
-   
- 
-    
+
 }
-.headerImage {
+.MainHeaderTest{
+    width: 105%;
+    display: grid;
+    /* Center both horizontally and vertically */
+    margin: 0 auto;
+    overflow:visible;
+    margin-bottom: 20%;
+
+}
+.headerImageTest{
+    position: relative;
+    left: -3%;
+}
+.headerImageMobile {
      /* Higher z-index to ensure it is above the sky image */
  /* Use absolute positioning */
     /* Adjust as needed */
     left: 0; /* Adjust as needed */
     z-index: 21;
     top: 50%;
+    display:block;
+    padding-bottom: 20%;
 }
+.headerImage
+{
+    display:none; ;
+
+}
+.headerImageTest{
+    width: 100%;
+}
+
 main {
     position: relative;
     top: 0px; /* Adjust this value as needed */
@@ -935,7 +956,15 @@ footer{
         height: 10px;
     }
     
-    
+    .headerImageMobile {
+
+       display:none;
+   }
+   .headerImage
+   {
+       display:block ;
+   
+   }
     .form-group {
         flex-direction: row; /* Change to row layout for desktop */
         justify-content: space-between;
