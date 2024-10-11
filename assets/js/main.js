@@ -224,24 +224,6 @@ labels.forEach(label => {
 });
 
 
-// moving header image 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const movingImage = document.getElementById('movingImage');
-
-    function startAnimation() {
-        movingImage.style.animation = 'moveRightToLeft 5s linear infinite';
-    }
-
-    function stopAnimation() {
-        movingImage.style.animation = 'none';
-    }
-
-    // Start the animation when the page loads
-    startAnimation();
-
-    // Example: Stop the animation after 10 seconds
-    setTimeout(stopAnimation, 10000);
-});
 
 

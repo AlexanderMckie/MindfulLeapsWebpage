@@ -37,45 +37,16 @@ body{
 }
 
 .MainHeader{
-    width: 80%;
-    display: grid;
-    /* Center both horizontally and vertically */
-    margin: 0 auto;
-    overflow:visible;
-    margin-bottom: 20%;
-
-}
-.MainHeaderTest{
-    width: 105%;
-    display: grid;
-    /* Center both horizontally and vertically */
-    margin: 0 auto;
-    overflow:visible;
-    margin-bottom: 20%;
-
-}
-.headerImageTest{
-    position: relative;
-    left: -3%;
-}
-.headerImageMobile {
-     /* Higher z-index to ensure it is above the sky image */
- /* Use absolute positioning */
-    /* Adjust as needed */
-    left: 0; /* Adjust as needed */
-    z-index: 21;
-    top: 50%;
-    display:block;
-    padding-bottom: 20%;
-}
-.headerImage
-{
-    display:none; ;
-
-}
-.headerImageTest{
     width: 100%;
+    display: grid;
+    /* Center both horizontally and vertically */
+    margin: 0 auto;
+    overflow:visible;
+    margin-bottom: 20%;
+
 }
+
+
 
 main {
     position: relative;
@@ -356,6 +327,9 @@ p {
     text-align: center;
     
 
+}
+.quoteSection{
+    padding-bottom: 0%;
 }
 .missionContainer{
     width: 100%;
@@ -955,16 +929,9 @@ footer{
     .ham-menu span {
         height: 10px;
     }
-    
-    .headerImageMobile {
-
-       display:none;
-   }
-   .headerImage
-   {
-       display:block ;
-   
-   }
+    .MainHeader{
+        width: 80%;
+    }
     .form-group {
         flex-direction: row; /* Change to row layout for desktop */
         justify-content: space-between;
