@@ -57,14 +57,14 @@ const borderTopConfig = [
 const quoteBorderTopConfig = [
     {
         id: "quoteBorderTop",
-        svgPath: 'assets/images/quoteBorderTop.svg'
+        svgPath: 'assets/images/QuoteBorderTop.svg'
     },
     // Add more configuration objects for other sections as needed
 ];
 const quoteBorderBottomConfig = [
     {
         id: "quoteBorderBottom",
-        svgPath: 'assets/images/quoteBorderBottom.svg'
+        svgPath: 'assets/images/QuoteBorderBottom.svg'
     },
     // Add more configuration objects for other sections as needed
 ];
