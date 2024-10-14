@@ -218,12 +218,16 @@ document.addEventListener('DOMContentLoaded', function() {
         );
     });
 });
-const labels = document.querySelectorAll('.referral-first-name');
-labels.forEach(label => {
-    label.innerHTML = label.textContent.replace(/_/g, '<span class="hidden-char">_</span>');
-});
+window.parent.postMessage({
+    height: document.body.scrollHeight
+}, "*"); // "*" allows cross-origin messaging
 
 
-
-
-
+window.addEventListener("message", function(event) {
+    if (event.origin !== "https://mindful-leaps-therapy.splose.com") return; // Restrict the origin for security
+    
+    const iframe = document.getElementById("embeddableForm");
+    if (event.data.height) {
+        iframe.style.height = event.data.height + "px";
+    }
+}, false);

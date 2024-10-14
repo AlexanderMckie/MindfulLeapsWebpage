@@ -339,148 +339,29 @@ p {
     overflow: visible;
     position: relative;
 }
-
-
-
-
-.contactContainer{
-    width: 100%;
-    padding-top: -10%;
-    background-color: rgba(250,190,190);
-    z-index: 0;
-    overflow: hidden;
-    position: relative;
-    
-}
 .contactBorderSpace{
-    height: 150px;
+    height: 200px;
     z-index: -10;
     background-color: rgb(250, 190, 190);
     position: relative;
 }
-.contactHeader{
-    margin-top: -30%;
-    padding-bottom: 5%;
-}
-.contactHeaderRefferal{
-    margin-bottom: 10%;
-}
-.contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    max-width: 1000px;
-    z-index: 2;
-    position: relative; 
-    
-}
-
-/* Styling for form inside contact section */
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative; 
-    text-align: center;
-    padding: 20px;
-    width: 100%; /* Ensure form takes full width of its container */
-    z-index: 3;
-}
-
-/* Styling for form groups */
-.form-group, .name-group {
-    display: flex;
-    flex-direction: column; /* Arrange label and input in a column */
-    align-items: center;
+.formSection {
     width: 100%;
-    margin-bottom: 20px;
-    z-index: 3;
-    position: relative; 
-    
+    overflow: hidden; /* Prevent scrolling */
+    background: rgb(250, 190, 190);
+    height: 2700px;
+    z-index: -50;
 }
 
-/* Styling for labels */
-.form-group label, .name-group label, .funding-label {
-    color: #260e30;
-    font-size: 30px;
-    font-family: "Overpass", sans-serif;
-    padding: 10px;
-    text-align: center;
-    width: 100%; /* Ensure label takes full width of its container */
-    z-index: 3;
-    position: relative; 
-}
-/* This is used the hide _ charcters is some elemetns to correctly space text */
-.hidden-char {
-    opacity: 0;
-}
-
-/* Styling for common input fields */
-.common-input,
-.form-group input,
-.form-group textarea,.name-group input {
-    width: 100%; /* Ensure inputs take up most of the form width */
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    background-color: #0d81af3b;
-    color: white;
-    height: 3rem;
-    margin: 10px 0; /* Add margin for spacing between inputs */
-    font-family: 'Arial', sans-serif; /* Set font family */
-    font-size: 1.5rem; /* Set font size */
-    color: #e9e2e2; /* Set text color */
-    position: relative ;
-    z-index: 3;
-}
-
-
-#concerns,#additional-info,#hear-about-us {
-    height: 6rem; /* Adjust this value to set the desired height */
-}
-
-/* Placeholder styling */
-.contact input::placeholder,
-.contact textarea::placeholder {
-    color: #e9e2e2;
-    font-size: 18px;
-    font-family: 'Arial', sans-serif;
-}
-
-.funding-group {
-    display: flex;
-    flex-direction: row; /* Arrange checkboxes in a column */
-    align-items: center;
+.embeddableForm {
     width: 100%;
-    justify-content: center;
-    gap: 10px; /* Adjust the gap between checkboxes and labels */
-    position: relative;
+    border: 0;
+    height: 100%; /* Ensure the form takes up the full height of the container */
+    overflow: auto; /* Allow iframe content to be scrollable */
+    padding-top: 10%;
 }
-.funding-label label{
-    font-size: 1.5rem;
-    
-}
-
-
-.funding-group input[type="checkbox"] {
-    margin-right: 5px; /* Adjust the space between checkbox and label */
-}
-
-button {
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: none;
-    background-color: #300324;
-    color: white;
-    font-size: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
+.formHeader{
+    background: rgb(250, 190, 190);
 }
 
 
@@ -877,16 +758,8 @@ footer{
         width: 80%;
       
     }
-    .contact {
-        width: 100%; /* Ensure the contact section takes full width */
-        max-width: 1000px; /* Set a maximum width for the contact section */
-        margin: 0 auto; /* Center the contact section */
-        padding: 0 20px; /* Add padding to prevent content from touching the edges */
-    }
-    .form-group {
-        width: 80%;
-        
-    }
+ 
+  
     .contactBorderSpace{
         height: 200px;
         z-index: -10;
