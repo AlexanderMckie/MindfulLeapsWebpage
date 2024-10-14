@@ -1,11 +1,19 @@
 const hamMenu = document.querySelector(".ham-menu");
-    const offScreenMenu = document.querySelector(".off-screen-menu");
+const offScreenMenu = document.querySelector(".off-screen-menu");
 
 hamMenu.addEventListener("click", () => {
     hamMenu.classList.toggle("active");
     offScreenMenu.classList.toggle("active");
 });
 
+// Add event listener to each menu item
+const menuItems = offScreenMenu.querySelectorAll("a");
+menuItems.forEach(item => {
+    item.addEventListener("click", () => {
+        hamMenu.classList.remove("active");
+        offScreenMenu.classList.remove("active");
+    });
+});
 
 document.addEventListener('DOMContentLoaded', function() {
     gsap.registerPlugin(ScrollTrigger);1
@@ -223,11 +231,3 @@ window.parent.postMessage({
 }, "*"); // "*" allows cross-origin messaging
 
 
-window.addEventListener("message", function(event) {
-    if (event.origin !== "https://mindful-leaps-therapy.splose.com") return; // Restrict the origin for security
-    
-    const iframe = document.getElementById("embeddableForm");
-    if (event.data.height) {
-        iframe.style.height = event.data.height + "px";
-    }
-}, false);

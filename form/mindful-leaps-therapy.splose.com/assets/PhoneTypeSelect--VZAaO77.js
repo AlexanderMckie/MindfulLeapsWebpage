@@ -1,1 +1,0 @@
-import{z as o}from"./index-FU15wMs0.js";import{S as s}from"./AddressAutocomplete.module-B6NgFNL3.js";const{Option:n}=s,r=["Home","Mobile","Work","Fax","Other"],m=e=>o.jsx(s,{...e,style:{...e.style,minWidth:"50px"},children:r.map(t=>o.jsx(n,{value:t,children:t}))});export{m as P};
