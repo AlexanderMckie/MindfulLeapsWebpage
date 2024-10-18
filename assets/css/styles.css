@@ -30,11 +30,17 @@
 }
 
 body{
-    background: rgb(260, 259, 259); 
+    /* background: rgb(260, 259, 259);  */
     overflow: visible;
     z-index: -1000;
    
 }
+
+main {
+    position: relative;
+    top: 0px; /* Adjust this value as needed */
+}
+
 
 .MainHeader{
     width: 100%;
@@ -46,6 +52,21 @@ body{
   
 
 }
+.HeaderContainer {
+ 
+}
+.headerImageBG{
+    width: 150%;
+    height: 150%;
+    background-color: rgb(0, 0, 0); /* Add a semi-transparent overlay */
+    position: absolute; /* Position the overlay relative to the container */
+    top: -50; /* Position the overlay at the top of the container */
+    left: 0; /* Position the overlay at the left of the container */
+    z-index: -10000; /* Position the overlay behind the content */
+    opacity: 0.3; /* Adjust the opacity as needed */
+    padding: 0%;
+    overflow: hidden;
+}
 .headerImage{
     top: -40PX;
     position: relative;
@@ -53,11 +74,6 @@ body{
     
 
 
-
-main {
-    position: relative;
-    top: 0px; /* Adjust this value as needed */
-}
 
 
 /*  Nav Bar and its compnments*/
@@ -182,7 +198,10 @@ nav {
 
 
 /* the main sections and thier components  */
-
+main {
+    position: relative;
+    top: -600px; /* Adjust the value as needed */
+}
 section {
   
     z-index: 1;

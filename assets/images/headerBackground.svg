@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1081.21 1800">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .27em;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        fill: #afd5e3;
+      }
+
+      .cls-1, .cls-2, .cls-4, .cls-5, .cls-6, .cls-10, .cls-7, .cls-8, .cls-9 {
+        isolation: isolate;
+      }
+
+      .cls-1, .cls-2, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        font-family: Queensides-Medium, Queensides;
+        font-size: 47.03px;
+        font-weight: 500;
+      }
+
+      .cls-2 {
+        letter-spacing: .22em;
+      }
+
+      .cls-4 {
+        font-family: BodoniFLF-Bold, BodoniFLF;
+        font-size: 59.49px;
+        font-weight: 700;
+        letter-spacing: .05em;
+      }
+
+      .cls-5 {
+        letter-spacing: .17em;
+      }
+
+      .cls-11 {
+        fill: #f9bebe;
+      }
+
+      .cls-6 {
+        letter-spacing: .39em;
+      }
+
+      .cls-12 {
+        fill: #f5bf84;
+      }
+
+      .cls-7 {
+        letter-spacing: .25em;
+      }
+
+      .cls-8 {
+        letter-spacing: .21em;
+      }
+
+      .cls-9 {
+        letter-spacing: .23em;
+      }
+
+      .cls-13 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="540" y1="-129.92" x2="540" y2="1367.67" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".27" stop-color="#fdfdfd" stop-opacity=".99"/>
+      <stop offset=".41" stop-color="#f6f6f6" stop-opacity=".96"/>
+      <stop offset=".51" stop-color="#eaeaea" stop-opacity=".91"/>
+      <stop offset=".61" stop-color="#dad9d9" stop-opacity=".83"/>
+      <stop offset=".69" stop-color="#c5c4c4" stop-opacity=".74"/>
+      <stop offset=".76" stop-color="#aaa9a9" stop-opacity=".62"/>
+      <stop offset=".83" stop-color="#8b898a" stop-opacity=".48"/>
+      <stop offset=".9" stop-color="#676465" stop-opacity=".31"/>
+      <stop offset=".96" stop-color="#403c3d" stop-opacity=".13"/>
+      <stop offset="1" stop-color="#231f20" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="whiteGradient">
+    <rect class="cls-13" width="1080" height="1207"/>
+  </g>
+  <g id="logo">
+    <g id="Raindow">
+      <g id="RaindowRing1">
+        <path class="cls-12" d="M307.07,694.68s-3.78-106.07-84.89-105.16c0,0-83.02-1.92-85.03,105.16h23.17s-1.37-83.85,63.13-84.42c0,0,54.28-3.4,59.96,84.42"/>
+      </g>
+      <g id="RainbowRing2">
+        <path class="cls-11" d="M314.07,694.68s.89-116.4-92.59-116.7c0,0-92.21-.86-94.7,116.7h-26.55s.47-134.64,119.8-140.27c0,0,112.3-9.03,119.62,140.27h-25.59Z"/>
+      </g>
+      <g id="RainbowRing3">
+        <path class="cls-3" d="M369.1,694.68c.36,1.05.54-158.71-150.75-166.39,0,0-134.42-8.97-145.59,166.39l20.75.28s0-147.31,124.84-150.18c0,0,117.18-7.89,132.4,149.9"/>
+      </g>
+    </g>
+    <g id="Therapy">
+      <g class="cls-10">
+        <text class="cls-9" transform="translate(382.94 690.36) scale(1.13 1)"><tspan x="0" y="0">T</tspan></text>
+        <text class="cls-6" transform="translate(423.18 690.36) scale(1.13 1)"><tspan x="0" y="0">H</tspan></text>
+        <text class="cls-1" transform="translate(471.77 690.36) scale(1.13 1)"><tspan x="0" y="0">E</tspan></text>
+        <text class="cls-8" transform="translate(513.67 690.36) scale(1.13 1)"><tspan x="0" y="0">R</tspan></text>
+        <text class="cls-2" transform="translate(554.73 690.36) scale(1.13 1)"><tspan x="0" y="0">A</tspan></text>
+        <text class="cls-5" transform="translate(608.22 690.36) scale(1.13 1)"><tspan x="0" y="0">P</tspan></text>
+        <text class="cls-7" transform="translate(646.31 690.36) scale(1.13 1)"><tspan x="0" y="0">Y</tspan></text>
+      </g>
+    </g>
+    <g id="MindfulLeaps">
+      <g class="cls-10">
+        <text class="cls-4" transform="translate(383.82 636.25) scale(1.13 1)"><tspan x="0" y="0">MINDFUL LEAPS</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g id="curveLower">
+    <path class="cls-12" d="M.56,1800h1079.44v-772.78,17.33c0-87.11-114.07-163.46-137.67-168.89-125.97-29-66.35,56.21-300,124.89-62.64,18.41-108.51,31.9-172.44,28.44-127.83-6.9-174.34-73.23-280.89-71.11-45.09.9-110.1,14.23-188.44,74.67"/>
+  </g>
+  <g id="curveTopBottom">
+    <path class="cls-11" d="M1.21,58.83h1080v505c-39.49,15.84-100.61,35.48-176.33,39.11-161.09,7.71-202.98-65.92-379.56-77.33-123.59-7.99-136.9,25.9-287.11,17.78-100.85-5.45-182.6-25.47-236.44-41.78"/>
+  </g>
+  <g id="curveLowerTop">
+    <path class="cls-3" d="M.56,1800h1079.44v-785.22c-23.91-13.86-63.97-33.5-115.89-40.89-147.02-20.92-201.24,83.14-355.56,99.56-143.87,15.31-171.37-67.2-339.56-64-116.14,2.21-209.52,43.58-268.44,76.56"/>
+  </g>
+  <g id="curveTop">
+    <path class="cls-3" d="M0,0h1080l1.21,375.91v156.44c-24.45,13.76-67.54,34.26-123,39.11-178.23,15.58-238.85-151.96-451.56-181.33-95.68-13.21-98.92,18.54-279.11,10.67-96.13-4.2-174.45-16.7-225.78-26.67"/>
+  </g>
+</svg>

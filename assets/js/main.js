@@ -1,3 +1,100 @@
+
+// functionto creat header image 
+
+// Function to create header image
+document.addEventListener('DOMContentLoaded', function() {
+    // Load the SVG into the HeaderContainer
+    const headerContainer = document.querySelector('.MainHeader');
+    fetch('assets/images/headerBackground.svg')
+        .then(response => response.text())
+        .then(svgContent => {
+            headerContainer.innerHTML = svgContent;
+            const svgElement = headerContainer.querySelector('svg');
+            svgElement.style.width = '100%';
+            svgElement.style.height = 'auto';
+            svgElement.style.zIndex = '-10000';
+            svgElement.style.position = 'relative';
+            svgElement.style.top = '-4%'; // Position at the top of the window
+            svgElement.style.left = '-13%';
+
+            // Animate sections of the SVG on scroll
+            animateSVGSectionsOnScroll(svgElement);
+        });
+
+    function animateSVGSectionsOnScroll(svgElement) {
+        // Example: Animate an element with id 'curveLower' within the SVG on scroll
+        gsap.to(svgElement.querySelector('#curveLower'), {
+            y: 200,
+            duration: 2,
+            yoyo: true,
+            ease: 'power1.inOut',
+            scrollTrigger: {
+                trigger: svgElement.querySelector('#curveLower'),
+                start: 'top bottom', // When the top of the element hits the bottom of the viewport
+                end: 'bottom top', // When the bottom of the element hits the top of the viewport
+                scrub: true // Smooth scrubbing
+            }
+        });
+        gsap.to(svgElement.querySelector('#curveLowerTop'), {
+            y: -400,
+            duration: 2,
+            yoyo: true,
+            ease: 'power1.inOut',
+            scrollTrigger: {
+                trigger: svgElement.querySelector('#curveLower'),
+                start: 'top bottom', // When the top of the element hits the bottom of the viewport
+                end: 'bottom top', // When the bottom of the element hits the top of the viewport
+                scrub: true // Smooth scrubbing
+            }
+        });
+        gsap.to(svgElement.querySelector('#curveTopBottom'), {
+            y: -800,
+            duration: 2,
+            yoyo: true,
+            ease: 'power1.inOut',
+            scrollTrigger: {
+                trigger: svgElement.querySelector('#curveLower'),
+                start: 'top bottom', // When the top of the element hits the bottom of the viewport
+                end: 'bottom top', // When the bottom of the element hits the top of the viewport
+                scrub: true // Smooth scrubbing
+            }
+        });
+
+        // Add more animations for other sections as needed
+        gsap.to(svgElement.querySelector('#curveTop'), {
+            y: -200,
+            duration: 2,
+            yoyo: true,
+            ease: 'power1.inOut',
+            scrollTrigger: {
+                trigger: svgElement.querySelector('#curveTop'),
+                start: 'top bottom',
+                end: 'bottom top',
+                scrub: true
+            }
+        });
+        gsap.fromTo(svgElement.querySelector('#logo'), 
+        { opacity: 0 }, 
+        { 
+            opacity: 1, 
+            duration: 2, 
+            ease: 'power1.inOut',
+            scrollTrigger: {
+                trigger: svgElement.querySelector('#logo'),
+                start: 'top bottom', // When the top of the element hits the bottom of the viewport
+                end: 'bottom top', // When the bottom of the element hits the top of the viewport
+                scrub: true // Smooth scrubbing
+            }
+        });
+    
+    }
+});
+
+
+
+
+
+
 const hamMenu = document.querySelector(".ham-menu");
 const offScreenMenu = document.querySelector(".off-screen-menu");
 
@@ -229,5 +326,4 @@ document.addEventListener('DOMContentLoaded', function() {
 window.parent.postMessage({
     height: document.body.scrollHeight
 }, "*"); // "*" allows cross-origin messaging
-
 
