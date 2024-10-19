@@ -53,7 +53,7 @@ main {
 
 }
 .HeaderContainer {
- 
+ top: 0px;
 }
 .headerImageBG{
     width: 150%;
@@ -200,8 +200,36 @@ nav {
 /* the main sections and thier components  */
 main {
     position: relative;
-    top: -600px; /* Adjust the value as needed */
+    /* Adjust the value as needed */
 }
+.headerTest1{
+    position: relative;
+    top:-600px;
+
+}
+
+
+
+.headerImage2, .MainHeader2 {
+    top: -45px;
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.headerImage2 img {
+    width: 100%; /* Ensure the image takes up 100% of the container's width */
+    height: auto; /* Maintain the aspect ratio */
+}
+.headerTest2{
+    position: relative;
+    top:-30vh;
+}
+
+
+
+
+
 section {
   
     z-index: 1;
@@ -250,9 +278,24 @@ p {
     display: inline;
 }
 
-
-
-
+.MainHeader2{
+    width: 100%;
+    display: grid;
+    /* Center both horizontally and vertically */
+    margin: 0 auto;
+    overflow:visible;
+    margin-bottom: 8%;
+    z-index: -1022200;
+}
+.HeaderContainer2 {
+ width: 100%;
+ z-index: -1022200;
+}
+.headerImage2{
+   width: 100%;
+   z-index: -1022200;
+    
+}
 
 /* Styling for the index page */
 
