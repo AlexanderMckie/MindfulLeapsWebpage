@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1081.21 1800">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1081.21 1491.56">
   <defs>
     <style>
       .cls-1 {
@@ -39,11 +39,15 @@
         fill: #f9bebe;
       }
 
+      .cls-12 {
+        fill: none;
+      }
+
       .cls-6 {
         letter-spacing: .39em;
       }
 
-      .cls-12 {
+      .cls-13 {
         fill: #f5bf84;
       }
 
@@ -59,11 +63,11 @@
         letter-spacing: .23em;
       }
 
-      .cls-13 {
+      .cls-14 {
         fill: url(#linear-gradient);
       }
     </style>
-    <linearGradient id="linear-gradient" x1="540" y1="-129.92" x2="540" y2="1367.67" gradientUnits="userSpaceOnUse">
+    <linearGradient id="linear-gradient" x1="540" y1="-160.55" x2="540" y2="1690.1" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#fff"/>
       <stop offset=".27" stop-color="#fdfdfd" stop-opacity=".99"/>
       <stop offset=".41" stop-color="#f6f6f6" stop-opacity=".96"/>
@@ -77,48 +81,54 @@
       <stop offset="1" stop-color="#231f20" stop-opacity="0"/>
     </linearGradient>
   </defs>
+  <g id="bottomTrigger">
+    <rect class="cls-12" x="83.37" y="165.5" width="967.11" height="895.11"/>
+  </g>
+  <g id="topTrigger">
+    <rect class="cls-12" x="42.3" y="1.78" width="967.11" height="895.11"/>
+  </g>
   <g id="whiteGradient">
-    <rect class="cls-13" width="1080" height="1207"/>
+    <rect class="cls-14" width="1080" height="1491.56"/>
   </g>
   <g id="logo">
     <g id="Raindow">
       <g id="RaindowRing1">
-        <path class="cls-12" d="M307.07,694.68s-3.78-106.07-84.89-105.16c0,0-83.02-1.92-85.03,105.16h23.17s-1.37-83.85,63.13-84.42c0,0,54.28-3.4,59.96,84.42"/>
+        <path class="cls-13" d="M316.67,683.24s-3.78-106.07-84.89-105.16c0,0-83.02-1.92-85.03,105.16h23.17s-1.37-83.85,63.13-84.42c0,0,54.28-3.4,59.96,84.42"/>
       </g>
       <g id="RainbowRing2">
-        <path class="cls-11" d="M314.07,694.68s.89-116.4-92.59-116.7c0,0-92.21-.86-94.7,116.7h-26.55s.47-134.64,119.8-140.27c0,0,112.3-9.03,119.62,140.27h-25.59Z"/>
+        <path class="cls-11" d="M323.67,683.24s.89-116.4-92.59-116.7c0,0-92.21-.86-94.7,116.7h-26.55s.47-134.64,119.8-140.27c0,0,112.3-9.03,119.62,140.27h-25.59Z"/>
       </g>
       <g id="RainbowRing3">
-        <path class="cls-3" d="M369.1,694.68c.36,1.05.54-158.71-150.75-166.39,0,0-134.42-8.97-145.59,166.39l20.75.28s0-147.31,124.84-150.18c0,0,117.18-7.89,132.4,149.9"/>
+        <path class="cls-3" d="M378.7,683.24c.36,1.05.54-158.71-150.75-166.39,0,0-134.42-8.97-145.59,166.39l20.75.28s0-147.31,124.84-150.18c0,0,117.18-7.89,132.4,149.9"/>
       </g>
     </g>
     <g id="Therapy">
       <g class="cls-10">
-        <text class="cls-9" transform="translate(382.94 690.36) scale(1.13 1)"><tspan x="0" y="0">T</tspan></text>
-        <text class="cls-6" transform="translate(423.18 690.36) scale(1.13 1)"><tspan x="0" y="0">H</tspan></text>
-        <text class="cls-1" transform="translate(471.77 690.36) scale(1.13 1)"><tspan x="0" y="0">E</tspan></text>
-        <text class="cls-8" transform="translate(513.67 690.36) scale(1.13 1)"><tspan x="0" y="0">R</tspan></text>
-        <text class="cls-2" transform="translate(554.73 690.36) scale(1.13 1)"><tspan x="0" y="0">A</tspan></text>
-        <text class="cls-5" transform="translate(608.22 690.36) scale(1.13 1)"><tspan x="0" y="0">P</tspan></text>
-        <text class="cls-7" transform="translate(646.31 690.36) scale(1.13 1)"><tspan x="0" y="0">Y</tspan></text>
+        <text class="cls-9" transform="translate(392.54 678.91) scale(1.13 1)"><tspan x="0" y="0">T</tspan></text>
+        <text class="cls-6" transform="translate(432.78 678.91) scale(1.13 1)"><tspan x="0" y="0">H</tspan></text>
+        <text class="cls-1" transform="translate(481.37 678.91) scale(1.13 1)"><tspan x="0" y="0">E</tspan></text>
+        <text class="cls-8" transform="translate(523.27 678.91) scale(1.13 1)"><tspan x="0" y="0">R</tspan></text>
+        <text class="cls-2" transform="translate(564.33 678.91) scale(1.13 1)"><tspan x="0" y="0">A</tspan></text>
+        <text class="cls-5" transform="translate(617.82 678.91) scale(1.13 1)"><tspan x="0" y="0">P</tspan></text>
+        <text class="cls-7" transform="translate(655.91 678.91) scale(1.13 1)"><tspan x="0" y="0">Y</tspan></text>
       </g>
     </g>
     <g id="MindfulLeaps">
       <g class="cls-10">
-        <text class="cls-4" transform="translate(383.82 636.25) scale(1.13 1)"><tspan x="0" y="0">MINDFUL LEAPS</tspan></text>
+        <text class="cls-4" transform="translate(393.42 624.8) scale(1.13 1)"><tspan x="0" y="0">MINDFUL LEAPS</tspan></text>
       </g>
     </g>
   </g>
-  <g id="curveLower">
-    <path class="cls-12" d="M.56,1800h1079.44v-772.78,17.33c0-87.11-114.07-163.46-137.67-168.89-125.97-29-66.35,56.21-300,124.89-62.64,18.41-108.51,31.9-172.44,28.44-127.83-6.9-174.34-73.23-280.89-71.11-45.09.9-110.1,14.23-188.44,74.67"/>
+  <g id="curveLowerBottom">
+    <path class="cls-13" d="M.56,1489.89h1079.44v-757.54,16.99c-47-56.01-117.06-66.88-141.22-65.82-302.16,13.31-140.44,29.37-296.44,22.69-65.13-2.79-108.51,31.27-172.44,27.88-127.83-6.77-174.34-71.78-280.89-69.71-45.09.88-110.1,13.95-188.44,73.19"/>
   </g>
   <g id="curveTopBottom">
-    <path class="cls-11" d="M1.21,58.83h1080v505c-39.49,15.84-100.61,35.48-176.33,39.11-161.09,7.71-202.98-65.92-379.56-77.33-123.59-7.99-136.9,25.9-287.11,17.78-100.85-5.45-182.6-25.47-236.44-41.78"/>
+    <path class="cls-11" d="M0,1.78h1080l1.21,562.18c-39.49,10.35-100.61,23.19-176.33,25.56-161.09,5.04-202.98-43.08-379.56-50.53-123.59-5.22-136.9,16.92-287.11,11.62-100.85-3.56-182.6-16.64-236.44-27.3"/>
   </g>
   <g id="curveLowerTop">
-    <path class="cls-3" d="M.56,1800h1079.44v-785.22c-23.91-13.86-63.97-33.5-115.89-40.89-147.02-20.92-201.24,83.14-355.56,99.56-143.87,15.31-171.37-67.2-339.56-64-116.14,2.21-209.52,43.58-268.44,76.56"/>
+    <path class="cls-3" d="M.56,1489.89h1079.44v-785.22c-23.91-13.86-63.97-33.5-115.89-40.89-147.02-20.92-201.24,83.14-355.56,99.56-143.87,15.31-171.37-67.2-339.56-64-116.14,2.21-209.52,43.58-268.44,76.56"/>
   </g>
   <g id="curveTop">
-    <path class="cls-3" d="M0,0h1080l1.21,375.91v156.44c-24.45,13.76-67.54,34.26-123,39.11-178.23,15.58-238.85-151.96-451.56-181.33-95.68-13.21-98.92,18.54-279.11,10.67-96.13-4.2-174.45-16.7-225.78-26.67"/>
+    <path class="cls-3" d="M0,1.78h1080l.6,450.19v101.6c-24.45,8.94-67.54,22.25-123,25.4-178.23,10.12-238.85-98.69-451.56-117.77-95.68-8.58-98.92,12.04-279.11,6.93-96.13-2.73-174.45-10.85-225.78-17.32"/>
   </g>
 </svg>

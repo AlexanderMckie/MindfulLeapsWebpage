@@ -14,8 +14,13 @@ document.addEventListener('DOMContentLoaded', function() {
             svgElement.style.height = 'auto';
             svgElement.style.zIndex = '-10000';
             svgElement.style.position = 'relative';
-            svgElement.style.top = '-4%'; // Position at the top of the window
-            svgElement.style.left = '-13%';
+            svgElement.style.top = '-10VH'; // Position at the top of the window
+            svgElement.style.left = '0';
+
+            const logoElement = svgElement.querySelector('#logo');
+            if (logoElement) {
+                logoElement.style.opacity = '0';
+            }
 
             // Animate sections of the SVG on scroll
             animateSVGSectionsOnScroll(svgElement);
@@ -23,52 +28,66 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function animateSVGSectionsOnScroll(svgElement) {
         // Example: Animate an element with id 'curveLower' within the SVG on scroll
-        gsap.to(svgElement.querySelector('#curveLower'), {
+        gsap.to(svgElement.querySelector('#curveLowerTop'), {
+            y: 400,
+            duration: 2,
+            yoyo: true,
+            ease: 'power1.inOut',
+            scrollTrigger: {
+                trigger: svgElement.querySelector('#bottomTrigger'),
+                start: 'top bottom', // When the top of the element hits the bottom of the viewport
+                end: 'bottom top', // When the bottom of the element hits the top of the viewport
+                scrub: true,
+                markers: true // Smooth scrubbing
+            }
+        });
+        gsap.to(svgElement.querySelector('#curveLowerBottom'), {
             y: 200,
             duration: 2,
             yoyo: true,
             ease: 'power1.inOut',
             scrollTrigger: {
-                trigger: svgElement.querySelector('#curveLower'),
+                trigger: svgElement.querySelector('#bottomTrigger'),
                 start: 'top bottom', // When the top of the element hits the bottom of the viewport
                 end: 'bottom top', // When the bottom of the element hits the top of the viewport
                 scrub: true // Smooth scrubbing
             }
         });
-        gsap.to(svgElement.querySelector('#curveLowerTop'), {
-            y: -400,
+        gsap.to(svgElement.querySelector('#curveTop'), {
+            y: -600,
             duration: 2,
-            yoyo: true,
+            yoyo: false,
             ease: 'power1.inOut',
             scrollTrigger: {
-                trigger: svgElement.querySelector('#curveLower'),
+                trigger: svgElement.querySelector('#topTrigger'),
                 start: 'top bottom', // When the top of the element hits the bottom of the viewport
                 end: 'bottom top', // When the bottom of the element hits the top of the viewport
                 scrub: true // Smooth scrubbing
             }
         });
         gsap.to(svgElement.querySelector('#curveTopBottom'), {
-            y: -800,
+            y: -400,
             duration: 2,
             yoyo: true,
             ease: 'power1.inOut',
             scrollTrigger: {
-                trigger: svgElement.querySelector('#curveLower'),
+                trigger: svgElement.querySelector('#topTrigger'),
                 start: 'top bottom', // When the top of the element hits the bottom of the viewport
                 end: 'bottom top', // When the bottom of the element hits the top of the viewport
-                scrub: true // Smooth scrubbing
+                scrub: true, // Smooth scrubbing
+                markers: false
             }
         });
 
         // Add more animations for other sections as needed
-        gsap.to(svgElement.querySelector('#curveTop'), {
-            y: -200,
+        gsap.to(svgElement.querySelector('#topTrigger'), {
+            y: -400,
             duration: 2,
             yoyo: true,
             ease: 'power1.inOut',
             scrollTrigger: {
                 trigger: svgElement.querySelector('#curveTop'),
-                start: 'top bottom',
+                start: 'top top',
                 end: 'bottom top',
                 scrub: true
             }
@@ -83,7 +102,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 trigger: svgElement.querySelector('#logo'),
                 start: 'top bottom', // When the top of the element hits the bottom of the viewport
                 end: 'bottom top', // When the bottom of the element hits the top of the viewport
-                scrub: true // Smooth scrubbing
+                scrub: true,
+                markers: true // Smooth scrubbing
             }
         });
     

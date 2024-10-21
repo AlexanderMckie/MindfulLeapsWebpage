@@ -44,16 +44,18 @@ main {
 
 .MainHeader{
     width: 100%;
-    display: grid;
+    
     /* Center both horizontally and vertically */
     margin: 0 auto;
     overflow:visible;
-    margin-bottom: 8%;
+    margin-bottom: 0;
+    align-items: center;
   
 
 }
 .HeaderContainer {
  top: 0px;
+ width: 100%;
 }
 .headerImageBG{
     width: 150%;
@@ -966,9 +968,9 @@ footer{
     }
 
     .MainHeader{
-        width: 80%;
+        width: 100%;
       
-        margin-bottom: 13%;
+        /* margin-bottom: 13%; */
       
     
     }
