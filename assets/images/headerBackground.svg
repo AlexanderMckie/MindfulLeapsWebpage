@@ -68,24 +68,32 @@
       }
     </style>
     <linearGradient id="linear-gradient" x1="540" y1="-160.55" x2="540" y2="1690.1" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#fff"/>
-      <stop offset=".27" stop-color="#fdfdfd" stop-opacity=".99"/>
-      <stop offset=".41" stop-color="#f6f6f6" stop-opacity=".96"/>
-      <stop offset=".51" stop-color="#eaeaea" stop-opacity=".91"/>
-      <stop offset=".61" stop-color="#dad9d9" stop-opacity=".83"/>
-      <stop offset=".69" stop-color="#c5c4c4" stop-opacity=".74"/>
-      <stop offset=".76" stop-color="#aaa9a9" stop-opacity=".62"/>
-      <stop offset=".83" stop-color="#8b898a" stop-opacity=".48"/>
-      <stop offset=".9" stop-color="#676465" stop-opacity=".31"/>
-      <stop offset=".96" stop-color="#403c3d" stop-opacity=".13"/>
-      <stop offset="1" stop-color="#231f20" stop-opacity="0"/>
+      <stop offset="0" stop-color="#fff" stop-opacity=".8"/>
+      <stop offset=".28" stop-color="#fefefe" stop-opacity=".79"/>
+      <stop offset=".43" stop-color="#fbfcfd" stop-opacity=".76"/>
+      <stop offset=".55" stop-color="#f5fafb" stop-opacity=".71"/>
+      <stop offset=".64" stop-color="#eef6f9" stop-opacity=".63"/>
+      <stop offset=".73" stop-color="#e4f1f5" stop-opacity=".54"/>
+      <stop offset=".81" stop-color="#d8eaf1" stop-opacity=".42"/>
+      <stop offset=".89" stop-color="#cae3ec" stop-opacity=".28"/>
+      <stop offset=".96" stop-color="#badbe7" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#afd5e3" stop-opacity="0"/>
     </linearGradient>
   </defs>
   <g id="bottomTrigger">
     <rect class="cls-12" x="83.37" y="165.5" width="967.11" height="895.11"/>
   </g>
+  <g id="logoTrigger">
+    <rect class="cls-12" x="83.37" y="745.78" width="967.11" height="523.89"/>
+  </g>
   <g id="topTrigger">
     <rect class="cls-12" x="42.3" y="1.78" width="967.11" height="895.11"/>
+  </g>
+  <g id="curveLowerBottom">
+    <path class="cls-13" d="M.56,1489.89h1079.44v-757.54,16.99c-47-56.01-117.06-66.88-141.22-65.82-302.16,13.31-140.44,29.37-296.44,22.69-65.13-2.79-108.51,31.27-172.44,27.88-127.83-6.77-174.34-71.78-280.89-69.71-45.09.88-110.1,13.95-188.44,73.19"/>
+  </g>
+  <g id="curveLowerTop">
+    <path class="cls-3" d="M.56,1489.89h1079.44v-785.22c-23.91-13.86-63.97-33.5-115.89-40.89-147.02-20.92-201.24,83.14-355.56,99.56-143.87,15.31-171.37-67.2-339.56-64-116.14,2.21-209.52,43.58-268.44,76.56"/>
   </g>
   <g id="whiteGradient">
     <rect class="cls-14" width="1080" height="1491.56"/>
@@ -119,14 +127,8 @@
       </g>
     </g>
   </g>
-  <g id="curveLowerBottom">
-    <path class="cls-13" d="M.56,1489.89h1079.44v-757.54,16.99c-47-56.01-117.06-66.88-141.22-65.82-302.16,13.31-140.44,29.37-296.44,22.69-65.13-2.79-108.51,31.27-172.44,27.88-127.83-6.77-174.34-71.78-280.89-69.71-45.09.88-110.1,13.95-188.44,73.19"/>
-  </g>
   <g id="curveTopBottom">
     <path class="cls-11" d="M0,1.78h1080l1.21,562.18c-39.49,10.35-100.61,23.19-176.33,25.56-161.09,5.04-202.98-43.08-379.56-50.53-123.59-5.22-136.9,16.92-287.11,11.62-100.85-3.56-182.6-16.64-236.44-27.3"/>
-  </g>
-  <g id="curveLowerTop">
-    <path class="cls-3" d="M.56,1489.89h1079.44v-785.22c-23.91-13.86-63.97-33.5-115.89-40.89-147.02-20.92-201.24,83.14-355.56,99.56-143.87,15.31-171.37-67.2-339.56-64-116.14,2.21-209.52,43.58-268.44,76.56"/>
   </g>
   <g id="curveTop">
     <path class="cls-3" d="M0,1.78h1080l.6,450.19v101.6c-24.45,8.94-67.54,22.25-123,25.4-178.23,10.12-238.85-98.69-451.56-117.77-95.68-8.58-98.92,12.04-279.11,6.93-96.13-2.73-174.45-10.85-225.78-17.32"/>
