@@ -37,18 +37,32 @@ body{
 }
 
 .MainHeader{
-    width: 100%;
-    display: grid;
-    /* Center both horizontally and vertically */
-    margin: 0 auto;
+    width: 70%;
+    margin: 10%;
+    padding-top: 0%;
     overflow:visible;
-    margin-bottom: 8%;
-  
+    flex: auto;
+    position: relative;
+    top: -150px;
+
 
 }
 .headerImage{
-    top: -40PX;
+
     position: relative;
+    width: 100%;
+  
+}
+.quoteHeader{
+    font-size: 3rem;
+    color: #211527;
+    font-family: 'SummerGroovy', sans-serif;
+    text-align: center; 
+    letter-spacing: 2px;
+    text-align: center;
+    padding-bottom: 20%;
+    
+
 }
     
 
@@ -134,9 +148,9 @@ nav {
     right: 5%;
     top: 2%;
     z-index: 100;
-    
-    
+    display: block; 
 }
+
 .ham-menu span.TopBar {
     background-color: rgb(174,213,226); /* Top bar color */
 }
@@ -180,7 +194,61 @@ nav {
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+/* Navbar container */
+.DesktopNav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(180deg, #fdfcfc, #fdfcfc00); /* Gradient background */
+    padding: 15px 5%;
+    z-index: 1000;
+    display: none;
+    
+    /* Aligns image and text in the same row */
+    justify-content: space-between; /* Keeps image left and links right */
+    flex-wrap: nowrap; /* Prevents stacking */
+    
+}
 
+/* Image stays on the left */
+.NavImage {
+    width: 250px; /* Adjust as needed */
+    height: auto;
+    margin-right: 10%;
+}
+
+/* Navbar list stays on the right */
+.DesktopNav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: row; /* Ensure links are in a single row */
+    text-align: center; 
+    align-items: center;
+    gap: 3%;
+ 
+}
+
+/* Navbar links */
+.DesktopNav ul li a {
+    text-decoration: none;
+    color: #211527;
+    font-size: 30px;
+    padding: 10px 10px;
+    transition: color 0.3s ease-in-out, transform 0.3s;
+    font-family: 'SummerGroovy', sans-serif;
+    text-align: right; 
+    margin-left: auto;
+   
+}
+
+/* Pop-out effect on hover */
+.DesktopNav ul li a:hover {
+    color: #d61f6b;
+    transform: scale(1.3);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
 /* the main sections and thier components  */
 
 section {
@@ -246,6 +314,7 @@ p {
     z-index: -21;
     overflow: hidden;
     position: relative;
+    margin-bottom:-10%;
 }
 .aboutHeader{
     padding: 5%;
@@ -331,6 +400,7 @@ p {
     padding-top: 10%;
     padding-bottom: 10%;
     position: relative;
+
 }
 .quote{
     font-size: 4rem;
@@ -339,6 +409,7 @@ p {
     text-align: center; 
     letter-spacing: 2px;
     text-align: center;
+  
     
 
 }
@@ -759,7 +830,12 @@ footer{
 @media (min-width: 1024px) {
 
     
-
+    .ham-menu {
+        display: none;
+    }
+    .DesktopNav{
+        display: block;
+    }
     .aboutContentOne,
     .aboutContentTwo {
         display: flex;
