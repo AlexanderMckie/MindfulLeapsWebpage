@@ -52,7 +52,7 @@ body{
 }
 .headerImage{
     scale: 1.4;
-    padding-top: 20%;
+    padding-top: 10%;
     position: relative;
     width: 100%;
     padding-bottom: 10%;
@@ -66,8 +66,13 @@ body{
     letter-spacing: 2px;
     text-align: center;
     padding-bottom: 20%;
-    
+   
 
+}
+.headerTextContainer{
+   
+    top: -2rem;
+    position: relative;
 }
     
 
@@ -220,7 +225,28 @@ nav {
     width: 250px; /* Adjust as needed */
     height: auto;
     margin-right: 0%;
+    justify-content: flex-start;
 }
+@media (min-width: 1200px) {
+    .NavImage{
+        margin-right: 10%; 
+    }}
+@media (min-width: 1400px) {
+        .NavImage{
+            margin-right: 20%; 
+        }}
+@media (min-width: 1600px) {
+    .NavImage{
+        margin-right: 30%; 
+    }}
+@media (min-width: 1800px) {
+    .NavImage{
+        margin-right: 37%; 
+    }}
+
+
+
+        
 
 /* Navbar list stays on the right */
 .DesktopNav ul {
@@ -232,7 +258,7 @@ nav {
     text-align: left; 
     align-items: center;
     gap: 2%;
-    justify-content: flex-start; /* Align items to the left */
+    justify-content: flex-end; /* Align items to the left */
  
 }
 
@@ -971,6 +997,11 @@ footer{
         padding-bottom: 10%;
         font-size: 3rem;
        }
+       .headerTextContainer{
+   
+        top: -5rem;
+    
+    }
     
     
 }
