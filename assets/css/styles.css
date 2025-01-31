@@ -38,8 +38,11 @@ body{
 
 .MainHeader{
     width: 70%;
-    margin: 10%;
-    padding-top: 0%;
+    margin: 0 auto ;
+    padding-top: 5%;
+    justify-content: center;
+    align-items: center;
+
     overflow:visible;
     flex: auto;
     position: relative;
@@ -48,13 +51,15 @@ body{
 
 }
 .headerImage{
-
+    scale: 1.4;
+    padding-top: 20%;
     position: relative;
     width: 100%;
+    padding-bottom: 10%;
   
 }
 .quoteHeader{
-    font-size: 3rem;
+    font-size: 2.3rem;
     color: #211527;
     font-family: 'SummerGroovy', sans-serif;
     text-align: center; 
@@ -214,7 +219,7 @@ nav {
 .NavImage {
     width: 250px; /* Adjust as needed */
     height: auto;
-    margin-right: 10%;
+    margin-right: 0%;
 }
 
 /* Navbar list stays on the right */
@@ -224,23 +229,31 @@ nav {
     margin: 0;
     padding: 0;
     flex-direction: row; /* Ensure links are in a single row */
-    text-align: center; 
+    text-align: left; 
     align-items: center;
-    gap: 3%;
+    gap: 2%;
+    justify-content: flex-start; /* Align items to the left */
  
 }
 
 /* Navbar links */
 .DesktopNav ul li a {
-    text-decoration: none;
+ 
     color: #211527;
-    font-size: 30px;
-    padding: 10px 10px;
+    font-size: 2rem;
+    padding: 0px 10px;
     transition: color 0.3s ease-in-out, transform 0.3s;
     font-family: 'SummerGroovy', sans-serif;
-    text-align: right; 
-    margin-left: auto;
    
+    }
+    @media (max-width: 1100px) {
+        .DesktopNav ul li a {
+            font-size: 1.5rem; /* Adjust the font size for smaller screens */
+        }}
+.invisible-char {
+
+    visibility: hidden;
+
 }
 
 /* Pop-out effect on hover */
@@ -446,6 +459,7 @@ p {
 }
 .formHeader{
     background: rgb(250, 190, 190);
+    padding-bottom: 0%;
 }
 
 
@@ -465,6 +479,7 @@ p {
     z-index: -50;
     overflow: visible;
     position: relative;
+    margin-bottom:-8%;
 }
 .servicesTextOne, .servicesTextTwo{
     width: 80%;
@@ -829,13 +844,18 @@ footer{
 /* Media query for desktops */
 @media (min-width: 1024px) {
 
-    
-    .ham-menu {
-        display: none;
+    .MainHeader{
+     
+        padding-top: 20%;
+        margin-bottom: 17%;
+     
     }
-    .DesktopNav{
-        display: block;
-    }
+    .quoteHeader{
+        font-size: 3rem;
+        padding-bottom: 10%;
+        ;
+       }
+
     .aboutContentOne,
     .aboutContentTwo {
         display: flex;
@@ -934,11 +954,76 @@ footer{
 }
 
 
+@media (min-width: 900px) {
+    .MainHeader{
+        width: 60%;
+        padding-top: 0%;
+        margin-bottom: 0%;
+       
+    }
+    .headerImage{
+        top: -8rem;
+        scale: .8;
+        margin-bottom: -10%;
+    }
+    .quoteHeader{
+        font-size: 2rem;
+        padding-bottom: 10%;
+        font-size: 3rem;
+       }
+    
+    
+}
 
+@media (min-width: 1400px) {
+    .MainHeader{
+        width: 60%;
+     
+       
+    }
+    .headerImage{
+        top: -15rem;
+        scale: .8;
+        padding-bottom: 0%;
+    }
+    .quoteHeader{
+        font-size: 2rem;
+        padding-bottom: 10%;
+        font-size: 4rem ;
+    
+       }
+    
+    
+}
 
 
 /* For desktops and larger screens */
 @media (min-width: 768px) {
+    .ham-menu {
+        display: none;
+    }
+    .DesktopNav{
+        display: block;
+    }
+    .MainHeader{
+        width: 60%;
+        padding-top: 0%;
+        margin-bottom: 0%;
+       
+    }
+    .headerImage{
+        
+        scale: .8;
+        margin-bottom: -20%;
+    }
+    .quoteHeader{
+        font-size: 2rem;
+        padding-bottom: 10%;
+        font-size: 2.5rem;
+       }
+    
+    
+    
     .ham-menu {
         height: 80px;
         width: 70px; 
@@ -979,17 +1064,7 @@ footer{
         height: auto; /* Maintain the aspect ratio */
     }
 
-    .MainHeader{
-        width: 80%;
-      
-        margin-bottom: 13%;
-      
-    
-    }
-    .headerImage{
-        top: -40px  ;
-        
-    }
+
         
 
 }

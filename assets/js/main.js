@@ -230,3 +230,24 @@ window.parent.postMessage({
     height: document.body.scrollHeight
 }, "*"); // "*" allows cross-origin messaging
 
+
+// fUNCTION TO HIDE '_' CHARCTYERS 
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to wrap specific characters in a span
+    
+    function wrapCharacters(selector, characters) {
+        const elements = document.querySelectorAll(selector);
+        elements.forEach(element => {
+            let html = element.innerHTML;
+            characters.forEach(char => {
+                const regex = new RegExp(char, 'g');
+                html = html.replace(regex, `<span class="invisible-char">${char}</span>`);
+            });
+            element.innerHTML = html;
+        });
+    }
+    // Apply the wrapCharacters function only to the specified <nav> element
+    wrapCharacters('#DesktopNav', ['_']);
+    
+});
