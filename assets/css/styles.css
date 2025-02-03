@@ -46,7 +46,7 @@ body{
     overflow:visible;
     flex: auto;
     position: relative;
-    top: -150px;
+    top: -70px;
 
 
 }
@@ -67,11 +67,12 @@ body{
     text-align: center;
     padding-bottom: 20%;
    
+   
 
 }
 .headerTextContainer{
    
-    top: -2rem;
+  
     position: relative;
 }
     
@@ -1045,7 +1046,7 @@ footer{
     .headerImage{
         
         scale: .8;
-        margin-bottom: -20%;
+        margin-bottom: -25%;
     }
     .quoteHeader{
         font-size: 2rem;
